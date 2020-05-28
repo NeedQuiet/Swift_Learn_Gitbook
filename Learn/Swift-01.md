@@ -1,12 +1,12 @@
 #查看Swift版本
 终端命令查看当前Swift版本:
-```shell
+```bash
 xcrun swift -version
 ```
 
 输出：
 
-```shell
+```bash
 Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
 Target: x86_64-apple-darwin19.4.0
 ```

@@ -1,10 +1,15 @@
 {
   "title": "Daning·Swift",
   "author": "Daning",
-  "description": "Swift精简版笔记",
   "language": "zh-hans",
   "styles": {
     "website": "./styles/website.css"
+  },
+  "links": {
+    "sidebar": {
+      "GitHub": "https://github.com/NeedQuiet",
+      "个人博客": "https://daning.netlify.app/"
+    }
   },
   "structure": {
     "readme": "README.md"
@@ -27,7 +32,8 @@
         "oc": "objectivec",
         "objc": "objectivec",
         "objective-c": "objectivec",
-        "ObjectiveC": "objectivec"
+        "ObjectiveC": "objectivec",
+        "sw":"swift"
       },
       "ignore": ["sequence"]
     },
