@@ -3,6 +3,9 @@
   "author": "Daning",
   "description": "Swift精简版笔记",
   "language": "zh-hans",
+  "styles": {
+    "website": "./styles/website.css"
+  },
   "structure": {
     "readme": "README.md"
   },
