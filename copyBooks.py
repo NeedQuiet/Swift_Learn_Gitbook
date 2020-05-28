@@ -2,7 +2,7 @@ import os
 import shutil
 print("*** gf && gr")
 os.system("git fetch")
-os.system("git reabase")
+os.system("git rebase")
 
 print("*** Copy from master's _book ***")
 os.system("git checkout master -- _book")
