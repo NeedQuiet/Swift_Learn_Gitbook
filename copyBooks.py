@@ -1,5 +1,7 @@
 import os
 import shutil
+import datetime
+
 print("*** gf && gr")
 os.system("git fetch")
 os.system("git rebase")
@@ -29,7 +31,10 @@ if(os.path.exists(book_path)):
     print("*** Remove _book ***")
     print("*** Push... ***")
     os.system("git add .")
-    os.system("git commit -m 'update'")
+    now = datetime.datetime.now()
+    commitMessage = "Update by %d-%02d-%02d %02d:%02d:%02d" % (now.year,now.month,now.day,now.hour,now.minute,now.second)
+    commitCode = "git commit -m '%s'" % commitMessage
+    os.system(commitCode)
     os.system("git push origin gh-pages")
     print("*** Checkout master... ***")
     os.system("git checkout master")
