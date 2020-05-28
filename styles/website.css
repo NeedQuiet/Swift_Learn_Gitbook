@@ -1,0 +1,4 @@
+/* 移除GitBook目录下方的“本书使用GitBook发布”字样 */
+.gitbook-link {
+  display: none !important;
+}
