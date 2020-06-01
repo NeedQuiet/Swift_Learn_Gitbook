@@ -3,7 +3,7 @@
 
 # 空合运算符
 
-?? 语法：空合运算符
+?? 语法：合并空值运算符
 >let username = loginName ?? "Guest" <br>loginName 表示为可选性，如果loginName 为空，则使用默认名称 Guest
 
   ```swift
