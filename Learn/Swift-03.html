@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Swift基础初窥 · Daning·Swift</title>
+        <title>运算符 · Daning·Swift</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Swift-01.html" />
+    <link rel="next" href="Swift-03.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="Swift-02.html" />
     
 
     </head>
@@ -116,7 +116,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="./">
             
                 <a href="./">
             
@@ -311,7 +311,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="Swift-03.html">
+        <li class="chapter active" data-level="1.2.3" data-path="Swift-03.html">
             
                 <a href="Swift-03.html">
             
@@ -520,7 +520,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Swift基础初窥</a>
+        <a href=".." >运算符</a>
     </h1>
 </div>
 
@@ -535,8 +535,61 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#learn"><b></b>Learn</a></li></ul></div><a href="#learn" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="learn"><a name="learn" class="anchor-navigation-ex-anchor" href="#learn"><i class="fa fa-link" aria-hidden="true"></i></a>Learn</h1>
-<p>&#x6B64;&#x4E3A;Swift5&#x7F16;&#x7A0B;&#x57FA;&#x7840;&#x7CBE;&#x7B80;&#x7BC7;&#xFF0C;&#x7C7B;&#x4F3C;&#x57FA;&#x672C;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x3001;if&#x8BED;&#x53E5;&#x4E4B;&#x7C7B;&#x7684;&#x548C;OC&#x4E00;&#x4E9B;&#x91CD;&#x590D;&#x7684;&#x4E1C;&#x897F;&#x5C31;&#x4E0D;&#x8D58;&#x8FF0;&#x4E86;</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7A7A;&#x5408;&#x8FD0;&#x7B97;&#x7B26;"><b></b>&#x7A7A;&#x5408;&#x8FD0;&#x7B97;&#x7B26;</a></li><li><span class="title-icon "></span><a href="#&#x5F3A;&#x5236;&#x89E3;&#x6790;"><b></b>&#x5F3A;&#x5236;&#x89E3;&#x6790;</a></li><li><span class="title-icon "></span><a href="#&#x533A;&#x95F4;&#x8FD0;&#x7B97;&#x7B26;"><b></b>&#x533A;&#x95F4;&#x8FD0;&#x7B97;&#x7B26;</a></li></ul></div><a href="#&#x7A7A;&#x5408;&#x8FD0;&#x7B97;&#x7B26;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><blockquote>
+<p>&#x57FA;&#x672C;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x548C;OC&#x7B49;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x96F7;&#x540C;&#xFF0C;&#x5C31;&#x4E0D;&#x505A;&#x4ECB;&#x7ECD;&#x4E86;</p>
+</blockquote>
+<h1 id="&#x7A7A;&#x5408;&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x7A7A;&#x5408;&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x7A7A;&#x5408;&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7A7A;&#x5408;&#x8FD0;&#x7B97;&#x7B26;</h1>
+<p>?? &#x8BED;&#x6CD5;&#xFF1A;&#x7A7A;&#x5408;&#x8FD0;&#x7B97;&#x7B26;</p>
+<blockquote>
+<p>let username = loginName ?? &quot;Guest&quot; <br>loginName &#x8868;&#x793A;&#x4E3A;&#x53EF;&#x9009;&#x6027;&#xFF0C;&#x5982;&#x679C;loginName &#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x540D;&#x79F0; Guest</p>
+</blockquote>
+<pre class="language-"><code class="lang-swift">  <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">&quot;asd&quot;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token function">Int</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">?</span><span class="token operator">?</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token comment">//&#x5F88;&#x663E;&#x7136;a&#x8F6C;&#x4E0D;&#x4E86;Int&#xFF0C;&#x5982;&#x679C;&#x8F6C;&#x5931;&#x8D25;&#x5C31;&#x4F1A;&#x53BB;&#x53D6; ??&#x540E;&#x9762;&#x7684;100</span>
+
+  <span class="token comment">// ?? &#x7B49;&#x540C;&#x4E8E;&#x7CBE;&#x7B80;&#x4E86;&#x4EE5;&#x4E0B;&#x5224;&#x65AD;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token function">Int</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token constant">nil</span> <span class="token operator">?</span> <span class="token function">Int</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token operator">!</span> <span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">)</span>
+
+  <span class="token comment">// &#x4E5F;&#x7B49;&#x540C;&#x4E8E;&#xFF1A;</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">Int</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token constant">nil</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token function">Int</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token operator">!</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+<h1 id="&#x5F3A;&#x5236;&#x89E3;&#x6790;"><a name="&#x5F3A;&#x5236;&#x89E3;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#x5F3A;&#x5236;&#x89E3;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F3A;&#x5236;&#x89E3;&#x6790;</h1>
+<p>&#xFF01;&#x8BED;&#x6CD5;&#xFF1A;</p>
+<blockquote>
+<p>&#x5F53;&#x4F60;&#x786E;&#x5B9A;&#x53EF;&#x9009;&#x7C7B;&#x578B;&#x786E;&#x5B9E;&#x5305;&#x542B;&#x503C;&#x4E4B;&#x540E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x53EF;&#x9009;&#x7684;&#x540D;&#x5B57;&#x540E;&#x9762;&#x52A0;&#x4E00;&#x4E2A;&#x611F;&#x53F9;&#x53F7;&#xFF08;!&#xFF09;&#x6765;&#x83B7;&#x53D6;&#x503C;&#x3002;&#x8FD9;&#x4E2A;&#x611F;&#x53F9;&#x53F7;&#x8868;&#x793A;&quot;&#x6211;&#x77E5;&#x9053;&#x8FD9;&#x4E2A;&#x53EF;&#x9009;&#x6709;&#x503C;&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#x5B83;&#x3002;&quot;&#x8FD9;&#x88AB;&#x79F0;&#x4E3A;&#x53EF;&#x9009;&#x503C;&#x7684;&#x5F3A;&#x5236;&#x89E3;&#x6790;&#xFF08;forced unwrapping&#xFF09;&#x3002;</p>
+</blockquote>
+<pre class="language-"><code class="lang-swift"><span class="token keyword">var</span> myString<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token operator">?</span>
+myString <span class="token operator">=</span> <span class="token string">&quot;Hello, Swift!&quot;</span>
+<span class="token keyword">if</span> myString <span class="token operator">!=</span> <span class="token constant">nil</span> <span class="token punctuation">{</span>
+   <span class="token comment">// &#x5F3A;&#x5236;&#x89E3;&#x6790;</span>
+   <span class="token function">print</span><span class="token punctuation">(</span> myString<span class="token operator">!</span> <span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+   <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;myString &#x503C;&#x4E3A; nil&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6267;&#x884C;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sw"><span class="token builtin">Hello</span><span class="token punctuation">,</span> <span class="token builtin">Swift</span><span class="token operator">!</span>
+</code></pre>
+<h1 id="&#x533A;&#x95F4;&#x8FD0;&#x7B97;&#x7B26;"><a name="&#x533A;&#x95F4;&#x8FD0;&#x7B97;&#x7B26;" class="anchor-navigation-ex-anchor" href="#&#x533A;&#x95F4;&#x8FD0;&#x7B97;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x533A;&#x95F4;&#x8FD0;&#x7B97;&#x7B26;</h1>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">4</span>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x8303;&#x56F4; = <span class="token interpolation"><span class="token delimiter variable">\(</span>a<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token number">4</span>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x8303;&#x56F4; = <span class="token interpolation"><span class="token delimiter variable">\(</span>b<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> c <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token number">4</span>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x8303;&#x56F4; = <span class="token interpolation"><span class="token delimiter variable">\(</span>c<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+
+<span class="token comment">/*
+&#x8F93;&#x51FA;&#xFF1A;
+    &#x8303;&#x56F4; = 1...4
+    &#x8303;&#x56F4; = 1..&lt;4
+    &#x8303;&#x56F4; = -3..&lt;4
+*/</span>
+</code></pre>
 
                                 
                                 </section>
@@ -564,12 +617,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 简介">
+                <a href="Swift-02.html#元组类型" class="navigation navigation-prev " aria-label="Previous page: 元组类型">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Swift-01.html" class="navigation navigation-next " aria-label="Next page: 基本知识点">
+                <a href="Swift-03.html#空合运算符" class="navigation navigation-next " aria-label="Next page: 空合运算符">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -580,7 +633,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Swift基础初窥","level":"1.2","depth":1,"next":{"title":"基本知识点","level":"1.2.1","depth":2,"path":"Learn/Swift-01.md","ref":"Learn/Swift-01.md","articles":[{"title":"查看Swift版本","level":"1.2.1.1","depth":3,"anchor":"#查看swift版本","path":"Learn/Swift-01.md","ref":"Learn/Swift-01.md#查看swift版本","articles":[]},{"title":"数据类型","level":"1.2.1.2","depth":3,"anchor":"#数据类型","path":"Learn/Swift-01.md","ref":"Learn/Swift-01.md#数据类型","articles":[]},{"title":"变量、常量","level":"1.2.1.3","depth":3,"anchor":"#变量、常量","path":"Learn/Swift-01.md","ref":"Learn/Swift-01.md#变量、常量","articles":[]},{"title":"类型推断","level":"1.2.1.4","depth":3,"anchor":"#类型推断","path":"Learn/Swift-01.md","ref":"Learn/Swift-01.md#类型推断","articles":[]},{"title":"判断数据类型","level":"1.2.1.5","depth":3,"anchor":"#判断数据类型","path":"Learn/Swift-01.md","ref":"Learn/Swift-01.md#判断数据类型","articles":[]},{"title":"输出语句","level":"1.2.1.6","depth":3,"anchor":"#输出语句","path":"Learn/Swift-01.md","ref":"Learn/Swift-01.md#输出语句","articles":[]},{"title":"拼接字符串","level":"1.2.1.7","depth":3,"anchor":"#拼接字符串","path":"Learn/Swift-01.md","ref":"Learn/Swift-01.md#拼接字符串","articles":[]},{"title":"注释","level":"1.2.1.8","depth":3,"anchor":"#注释","path":"Learn/Swift-01.md","ref":"Learn/Swift-01.md#注释","articles":[]}]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","js-sequence-diagram-full@>=0.3.1","prism","-highlight","github","anchor-navigation-ex","expandable-chapters-small","-livereload","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec","ObjectiveC":"objectivec","sw":"swift"},"ignore":["sequence"]},"github":{"url":"https://github.com/NeedQuiet/Swift_Learn_Gitbook"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Daning","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daning·Swift","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/NeedQuiet","个人博客":"https://daning.netlify.app/"}},"gitbook":"*"},"file":{"path":"Learn/README.md","mtime":"2020-06-01T02:48:39.220Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-01T03:25:15.272Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"运算符","level":"1.2.3","depth":2,"next":{"title":"空合运算符","level":"1.2.3.1","depth":3,"anchor":"#空合运算符","path":"Learn/Swift-03.md","ref":"Learn/Swift-03.md#空合运算符","articles":[]},"previous":{"title":"元组类型","level":"1.2.2.3","depth":3,"anchor":"#元组类型","path":"Learn/Swift-02.md","ref":"Learn/Swift-02.md#元组类型","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","js-sequence-diagram-full@>=0.3.1","prism","-highlight","github","anchor-navigation-ex","expandable-chapters-small","-livereload","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec","ObjectiveC":"objectivec","sw":"swift"},"ignore":["sequence"]},"github":{"url":"https://github.com/NeedQuiet/Swift_Learn_Gitbook"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Daning","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daning·Swift","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/NeedQuiet","个人博客":"https://daning.netlify.app/"}},"gitbook":"*"},"file":{"path":"Learn/Swift-03.md","mtime":"2020-06-01T03:54:23.956Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-01T03:25:15.272Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
