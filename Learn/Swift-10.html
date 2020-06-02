@@ -1,0 +1,1332 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>10.函数相关 · Daning·Swift</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Daning">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Swift-10.html" />
+    
+    
+    <link rel="prev" href="Swift-09.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/NeedQuiet" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://daning.netlify.app/" target="_blank" class="custom-link">个人博客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Swift基础初窥
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Swift-01.html">
+            
+                <a href="Swift-01.html">
+            
+                    
+                    1.基本知识点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="Swift-01.html">
+            
+                <a href="Swift-01.html#查看swift版本">
+            
+                    
+                    查看Swift版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="Swift-01.html">
+            
+                <a href="Swift-01.html#数据类型">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="Swift-01.html">
+            
+                <a href="Swift-01.html#变量、常量">
+            
+                    
+                    变量、常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="Swift-01.html">
+            
+                <a href="Swift-01.html#类型推断">
+            
+                    
+                    类型推断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="Swift-01.html">
+            
+                <a href="Swift-01.html#判断数据类型">
+            
+                    
+                    判断数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="Swift-01.html">
+            
+                <a href="Swift-01.html#输出语句">
+            
+                    
+                    输出语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="Swift-01.html">
+            
+                <a href="Swift-01.html#拼接字符串">
+            
+                    
+                    拼接字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="Swift-01.html">
+            
+                <a href="Swift-01.html#注释">
+            
+                    
+                    注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Swift-02.html">
+            
+                <a href="Swift-02.html">
+            
+                    
+                    2.类型相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="Swift-02.html">
+            
+                <a href="Swift-02.html#类型别名">
+            
+                    
+                    类型别名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="Swift-02.html">
+            
+                <a href="Swift-02.html#类型转换">
+            
+                    
+                    类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="Swift-02.html">
+            
+                <a href="Swift-02.html#元组类型">
+            
+                    
+                    元组类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="Swift-02.html">
+            
+                <a href="Swift-02.html#函数类型">
+            
+                    
+                    函数类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="Swift-03.html">
+            
+                <a href="Swift-03.html">
+            
+                    
+                    3.运算符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="Swift-03.html">
+            
+                <a href="Swift-03.html#空合运算符">
+            
+                    
+                    空合运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="Swift-03.html">
+            
+                <a href="Swift-03.html#区间运算符">
+            
+                    
+                    区间运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="Swift-04.html">
+            
+                <a href="Swift-04.html">
+            
+                    
+                    4.可选类型相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="Swift-04.html">
+            
+                <a href="Swift-04.html#可选类型">
+            
+                    
+                    可选类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="Swift-04.html">
+            
+                <a href="Swift-04.html#可选绑定">
+            
+                    
+                    可选绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="Swift-03.html">
+            
+                <a href="Swift-03.html#强制解析">
+            
+                    
+                    强制解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="Swift-04.html">
+            
+                <a href="Swift-04.html#隐式展开">
+            
+                    
+                    隐式展开
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="Swift-05.html">
+            
+                <a href="Swift-05.html">
+            
+                    
+                    5.运算相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="Swift-05.html">
+            
+                <a href="Swift-05.html#switch-case">
+            
+                    
+                    switch case
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="Swift-05.html">
+            
+                <a href="Swift-05.html#for-in循环">
+            
+                    
+                    for in循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="Swift-05.html">
+            
+                <a href="Swift-05.html#while-循环">
+            
+                    
+                    while 循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="Swift-06.html">
+            
+                <a href="Swift-06.html">
+            
+                    
+                    6.String相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="Swift-06.html">
+            
+                <a href="Swift-06.html#基本操作">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="Swift-06.html">
+            
+                <a href="Swift-06.html#增">
+            
+                    
+                    增
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="Swift-06.html">
+            
+                <a href="Swift-06.html#删">
+            
+                    
+                    删
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="Swift-06.html">
+            
+                <a href="Swift-06.html#改">
+            
+                    
+                    改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="Swift-06.html">
+            
+                <a href="Swift-06.html#查">
+            
+                    
+                    查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="Swift-06.html">
+            
+                <a href="Swift-06.html#遍历字符串">
+            
+                    
+                    遍历字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.7" data-path="Swift-06.html">
+            
+                <a href="Swift-06.html#多行文本">
+            
+                    
+                    多行文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.8" data-path="Swift-06.html">
+            
+                <a href="Swift-06.html#特殊符号">
+            
+                    
+                    特殊符号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="Swift-07.html">
+            
+                <a href="Swift-07.html">
+            
+                    
+                    7.Array数组
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="Swift-07.html">
+            
+                <a href="Swift-07.html#基本操作">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="Swift-07.html">
+            
+                <a href="Swift-07.html#增">
+            
+                    
+                    增
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="Swift-07.html">
+            
+                <a href="Swift-07.html#删">
+            
+                    
+                    删
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="Swift-07.html">
+            
+                <a href="Swift-07.html#改">
+            
+                    
+                    改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="Swift-07.html">
+            
+                <a href="Swift-07.html#查">
+            
+                    
+                    查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="Swift-07.html">
+            
+                <a href="Swift-07.html#排序演示">
+            
+                    
+                    排序演示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="Swift-08.html">
+            
+                <a href="Swift-08.html">
+            
+                    
+                    8.Set集合
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="Swift-08.html">
+            
+                <a href="Swift-08.html#基本操作">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="Swift-08.html">
+            
+                <a href="Swift-08.html#集合比较">
+            
+                    
+                    集合比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="Swift-09.html">
+            
+                <a href="Swift-09.html">
+            
+                    
+                    9.Dictionary集合
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.9.1" data-path="Swift-09.html">
+            
+                <a href="Swift-09.html#基本操作">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.2" data-path="Swift-09.html">
+            
+                <a href="Swift-09.html#增">
+            
+                    
+                    增
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.3" data-path="Swift-09.html">
+            
+                <a href="Swift-09.html#删">
+            
+                    
+                    删
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.4" data-path="Swift-09.html">
+            
+                <a href="Swift-09.html#改">
+            
+                    
+                    改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.5" data-path="Swift-09.html">
+            
+                <a href="Swift-09.html#查">
+            
+                    
+                    查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.6" data-path="Swift-09.html">
+            
+                <a href="Swift-09.html#遍历">
+            
+                    
+                    遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.10" data-path="Swift-10.html">
+            
+                <a href="Swift-10.html">
+            
+                    
+                    10.函数相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="Swift-10.html">
+            
+                <a href="Swift-10.html#函数定义">
+            
+                    
+                    函数定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.2" data-path="Swift-10.html">
+            
+                <a href="Swift-10.html#关于参数名称">
+            
+                    
+                    参数名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.3" data-path="Swift-10.html">
+            
+                <a href="Swift-10.html#assert断言">
+            
+                    
+                    assert断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.4" data-path="Swift-10.html">
+            
+                <a href="Swift-10.html#inout关键字">
+            
+                    
+                    inout关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.5" data-path="Swift-10.html">
+            
+                <a href="Swift-10.html#函数类型">
+            
+                    
+                    函数类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.6" data-path="Swift-10.html">
+            
+                <a href="Swift-10.html#函数作为参数">
+            
+                    
+                    函数作为参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="Swift-11.html">
+            
+                <a href="Swift-11.html">
+            
+                    
+                    11.guard语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="Swift-11.html">
+            
+                <a href="Swift-11.html#基本用法">
+            
+                    
+                    基本用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.2" data-path="Swift-11.html">
+            
+                <a href="Swift-11.html#利用可选项绑定">
+            
+                    
+                    利用可选项绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >10.函数相关</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x5B9A;&#x4E49;"><b></b>&#x51FD;&#x6570;&#x5B9A;&#x4E49;</a></li><li><span class="title-icon "></span><a href="#&#x5173;&#x4E8E;&#x53C2;&#x6570;&#x540D;&#x79F0;"><b></b>&#x5173;&#x4E8E;&#x53C2;&#x6570;&#x540D;&#x79F0;</a></li><li><span class="title-icon "></span><a href="#assert&#x65AD;&#x8A00;"><b></b>assert&#x65AD;&#x8A00;</a></li><li><span class="title-icon "></span><a href="#inout&#x5173;&#x952E;&#x5B57;"><b></b>inout&#x5173;&#x952E;&#x5B57;</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x7C7B;&#x578B;"><b></b>&#x51FD;&#x6570;&#x7C7B;&#x578B;</a></li><li><span class="title-icon "></span><a href="#&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;"><b></b>&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;</a></li></ul></div><a href="#&#x51FD;&#x6570;&#x5B9A;&#x4E49;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x51FD;&#x6570;&#x5B9A;&#x4E49;"><a name="&#x51FD;&#x6570;&#x5B9A;&#x4E49;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x5B9A;&#x4E49;</h1>
+<ul>
+<li><p>&#x65E0;&#x53C2;&#xFF0C;&#x65E0;&#x8FD4;</p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;test&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">test2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Void</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;test2&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x65E0;&#x53C2;&#xFF0C;&#x6709;&#x8FD4;</p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">testInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token number">100</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x6709;&#x53C2;&#xFF0C;&#x65E0;&#x8FD4;</p>
+<pre class="language-"><code class="lang-sw"><span class="token comment">// ... &#x4EE3;&#x8868;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x8F93;&#x5165;&#x591A;&#x4E2A;&#x503C;</span>
+<span class="token keyword">func</span> <span class="token function">test4</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token function">type</span><span class="token punctuation">(</span>of<span class="token punctuation">:</span> name<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token function">test4</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">)</span> <span class="token comment">// Array&lt;String&gt;</span>
+</code></pre>
+</li>
+<li><p>&#x6709;&#x53C2;&#xFF0C;&#x6709;&#x8FD4;</p>
+<pre class="language-"><code class="lang-sw"><span class="token comment">//&#x793A;&#x4F8B;1&#xFF1A;</span>
+<span class="token keyword">func</span> <span class="token function">test3</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> name
+<span class="token punctuation">}</span>
+
+<span class="token comment">//&#x793A;&#x4F8B;2&#xFF1A;</span>
+<span class="token keyword">func</span> <span class="token function">test5</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span><span class="token punctuation">(</span>n1<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">,</span>n2<span class="token punctuation">:</span><span class="token builtin">Int</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span><span class="token builtin">String</span><span class="token punctuation">,</span><span class="token builtin">Int</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">// &#x53C2;&#x6570;&#x4E3A;&#x5143;&#x7EC4;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x5143;&#x7EC4;</span>
+    <span class="token keyword">var</span> value<span class="token punctuation">:</span><span class="token punctuation">(</span>a<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">,</span>b<span class="token punctuation">:</span><span class="token builtin">Int</span><span class="token punctuation">)</span>
+    value<span class="token punctuation">.</span>a <span class="token operator">=</span> name<span class="token punctuation">.</span>n1 <span class="token operator">+</span> <span class="token string">&quot; world&quot;</span>
+    value<span class="token punctuation">.</span>b <span class="token operator">=</span> name<span class="token punctuation">.</span>n2 <span class="token operator">+</span> <span class="token number">10</span>
+    <span class="token keyword">return</span> value
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> value <span class="token operator">=</span> <span class="token function">test5</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token comment">// (&quot;hello world&quot;, 110)</span>
+<span class="token comment">// &#x6216;&#x8005;</span>
+<span class="token keyword">var</span> value2<span class="token punctuation">:</span><span class="token punctuation">(</span>c<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">,</span>d<span class="token punctuation">:</span><span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token function">test5</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>value2<span class="token punctuation">.</span>c<span class="token punctuation">,</span>value2<span class="token punctuation">.</span>d<span class="token punctuation">)</span><span class="token comment">// hello world 110</span>
+</code></pre>
+</li>
+</ul>
+<h1 id="&#x5173;&#x4E8E;&#x53C2;&#x6570;&#x540D;&#x79F0;"><a name="&#x5173;&#x4E8E;&#x53C2;&#x6570;&#x540D;&#x79F0;" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x4E8E;&#x53C2;&#x6570;&#x540D;&#x79F0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5173;&#x4E8E;&#x53C2;&#x6570;&#x540D;&#x79F0;</h1>
+<p>&#x540C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x6709;2&#x4E2A;&#x540D;&#x79F0;&#x7684;</p>
+<p>//&#x4E13;&#x4E1A;&#x5B9A;&#x4E49; outName&#xFF1A;&#x51FD;&#x6570;&#x65F6;&#x673A;&#x53C2;&#x6570;&#x6807;&#x7B7E;(&#x5B9E;&#x53C2;),inName:&#x5F62;&#x5F0F;&#x53C2;&#x6570;&#x540D;(&#x5F62;&#x53C2;)
+//&#x4E2A;&#x4EBA;&#x7406;&#x89E3;&#x5C31;&#x662F; &#x5916;&#x90E8;&#x8C03;&#x7528;&#x540D;&#x548C;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x540D;</p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">test</span><span class="token punctuation">(</span>outName inName<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>inName<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token function">test</span><span class="token punctuation">(</span>outName<span class="token punctuation">:</span> <span class="token string">&quot;testStr&quot;</span><span class="token punctuation">)</span>
+
+<span class="token comment">// &#x5916;&#x90E8;&#x540D;&#x79F0;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;</span>
+<span class="token keyword">func</span> <span class="token function">test2</span><span class="token punctuation">(</span><span class="token number">_</span> inName<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>inName<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token function">test2</span><span class="token punctuation">(</span><span class="token string">&quot;test2Str&quot;</span><span class="token punctuation">)</span>
+</code></pre>
+<h1 id="assert&#x65AD;&#x8A00;"><a name="assert&#x65AD;&#x8A00;" class="anchor-navigation-ex-anchor" href="#assert&#x65AD;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a>assert&#x65AD;&#x8A00;</h1>
+<p>&#x7528;&#x6765;&#x505C;&#x6B62;&#x7A0B;&#x5E8F;&#x7684;</p>
+<pre class="language-"><code class="lang-sw"><span class="token function">assert</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span><span class="token string">&quot;&#x505C;&#x6B62;&#x7EE7;&#x7EED;&#x8FD0;&#x884C;&quot;</span><span class="token punctuation">)</span>
+</code></pre>
+<h1 id="inout&#x5173;&#x952E;&#x5B57;"><a name="inout&#x5173;&#x952E;&#x5B57;" class="anchor-navigation-ex-anchor" href="#inout&#x5173;&#x952E;&#x5B57;"><i class="fa fa-link" aria-hidden="true"></i></a>inout&#x5173;&#x952E;&#x5B57;</h1>
+<p>inout&#x5173;&#x952E;&#x5B57;&#x4F1A;&#x5C06;<code>&#x503C;&#x4F20;&#x9012;</code>&#x6539;&#x53D8;&#x4E3A;<code>&#x6307;&#x9488;/&#x5730;&#x5740;&#x4F20;&#x9012;</code></p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">test</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span> <span class="token keyword">inout</span> <span class="token builtin">Int</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    param <span class="token operator">=</span> param <span class="token operator">*</span> <span class="token number">2</span> <span class="token comment">// &#x4F7F;&#x7528;inout&#x624D;&#x80FD;&#x76F4;&#x63A5;&#x5BF9;&#x5165;&#x53C2;&#x8FDB;&#x884C;&#x503C;&#x64CD;&#x4F5C;</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>param<span class="token punctuation">)</span> <span class="token comment">// 20</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x4F20;&#x9012;&#x524D;a = &quot;</span> <span class="token operator">+</span> <span class="token function">String</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &#x4F20;&#x9012;&#x524D;a = 10</span>
+
+<span class="token function">test</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span> <span class="token operator">&amp;</span>a<span class="token punctuation">)</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x4F20;&#x9012;&#x540E;a = &quot;</span> <span class="token operator">+</span> <span class="token function">String</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &#x4F20;&#x9012;&#x540E;a = 20</span>
+</code></pre>
+<h1 id="&#x51FD;&#x6570;&#x7C7B;&#x578B;"><a name="&#x51FD;&#x6570;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x7C7B;&#x578B;</h1>
+<ul>
+<li><p>&#x5B9A;&#x4E49;</p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> a<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Void</span>
+<span class="token keyword">var</span> b<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token builtin">Int</span><span class="token punctuation">,</span><span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span>
+<span class="token keyword">let</span> c<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token builtin">Int</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span><span class="token builtin">Int</span><span class="token punctuation">,</span><span class="token builtin">String</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528;</p>
+<ol>
+<li><p>&#x5E38;&#x89C4;&#x8C03;&#x7528;</p>
+<pre class="language-"><code class="lang-sw"><span class="token comment">// &#x51FD;&#x6570;test1</span>
+<span class="token keyword">func</span> <span class="token function">test1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Void</span><span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// &#x5B9A;&#x4E49;&#x51FD;&#x6570;a&#xFF0C;&#x5E76;&#x5C06;&#x51FD;&#x6570;test1&#x8D4B;&#x7ED9;a</span>
+<span class="token keyword">var</span> a<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Void</span> <span class="token operator">=</span> test1
+
+<span class="token comment">//&#x8C03;&#x7528;</span>
+<span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6216;(&#x6709;&#x8FD4;&#x56DE;&#x503C;)</p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">test</span><span class="token punctuation">(</span>param1<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">,</span>param2<span class="token punctuation">:</span><span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span> <span class="token punctuation">{</span>
+<span class="token keyword">return</span> param1 <span class="token operator">+</span> <span class="token function">String</span><span class="token punctuation">(</span>param2<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> c<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token builtin">String</span><span class="token punctuation">,</span><span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span> <span class="token operator">=</span> test
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token function">c</span><span class="token punctuation">(</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+</li>
+<li><p>&#x533F;&#x540D;&#x51FD;&#x6570;&#x8C03;&#x7528;</p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> b<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token builtin">Void</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token builtin">Void</span> <span class="token keyword">in</span>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x533F;&#x540D;&#x51FD;&#x6570;&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token function">b</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6216;&#x8005;(&#x5E26;&#x53C2;&#x6570;&#x5E26;&#x8FD4;&#x56DE;&#x503C;)</p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> f<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token builtin">Int</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>array<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token builtin">Int</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span> <span class="token keyword">in</span>
+    <span class="token keyword">var</span> temp<span class="token punctuation">:</span><span class="token builtin">String</span> <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+    <span class="token keyword">for</span> item <span class="token keyword">in</span> array <span class="token punctuation">{</span>
+        temp <span class="token operator">=</span> temp <span class="token operator">+</span> <span class="token function">String</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> temp
+<span class="token punctuation">}</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 123</span>
+</code></pre>
+</li>
+</ol>
+</li>
+</ul>
+<h1 id="&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;"><a name="&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;</h1>
+<blockquote>
+<p>&#x51FD;&#x6570;&#x7C7B;&#x578B;&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;</p>
+</blockquote>
+<ul>
+<li>&#x4F8B;1&#xFF1A;(&#x5C06;test&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x5165;test1)</li>
+</ul>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Void</span><span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;test()&#x51FD;&#x6570;&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">test1</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">param</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">test1</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span> test<span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>&#x4F8B;2&#xFF1A;(&#x533F;&#x540D;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;)</li>
+</ul>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">test1</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">param</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">test1</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token builtin">Void</span> <span class="token keyword">in</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x533F;&#x540D;&#x51FD;&#x6570;&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>&#x4F8B;3&#xFF1A;(&#x5E26;&#x53C2;&#xFF0C;&#x5E26;&#x8FD4;&#x56DE;&#x503C;)</li>
+</ul>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">sum</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token builtin">Int</span><span class="token punctuation">,</span><span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span> <span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">param</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">// &#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x8C03;&#x7528;&#x4E86;add</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">add</span><span class="token punctuation">(</span>a<span class="token punctuation">:</span><span class="token builtin">Int</span><span class="token punctuation">,</span>b<span class="token punctuation">:</span><span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a <span class="token operator">+</span> b
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> value <span class="token operator">=</span> <span class="token function">sum</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span> add<span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;value = <span class="token interpolation"><span class="token delimiter variable">\(</span>value<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>&#x4F8B;4&#xFF1A;(&#x533F;&#x540D;&#x51FD;&#x6570;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x4F8B;3)</li>
+</ul>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">sum</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token builtin">Int</span><span class="token punctuation">,</span><span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span> <span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">param</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">// &#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x8C03;&#x7528;&#x4E86;add</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> value <span class="token operator">=</span> <span class="token function">sum</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">(</span>a<span class="token punctuation">:</span><span class="token builtin">Int</span><span class="token punctuation">,</span>b<span class="token punctuation">:</span><span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Int</span> <span class="token keyword">in</span>
+    <span class="token keyword">return</span> a <span class="token operator">+</span> b
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;value = <span class="token interpolation"><span class="token delimiter variable">\(</span>value<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Swift-09.html#遍历" class="navigation navigation-prev " aria-label="Previous page: 遍历">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Swift-10.html#函数定义" class="navigation navigation-next " aria-label="Next page: 函数定义">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10.函数相关","level":"1.2.10","depth":2,"next":{"title":"函数定义","level":"1.2.10.1","depth":3,"anchor":"#函数定义","path":"Learn/Swift-10.md","ref":"Learn/Swift-10.md#函数定义","articles":[]},"previous":{"title":"遍历","level":"1.2.9.6","depth":3,"anchor":"#遍历","path":"Learn/Swift-09.md","ref":"Learn/Swift-09.md#遍历","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","js-sequence-diagram-full@>=0.3.1","prism","-highlight","github","anchor-navigation-ex","expandable-chapters-small","-livereload","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec","ObjectiveC":"objectivec","sw":"swift"},"ignore":["sequence"]},"github":{"url":"https://github.com/NeedQuiet/Swift_Learn_Gitbook"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Daning","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daning·Swift","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/NeedQuiet","个人博客":"https://daning.netlify.app/"}},"gitbook":"*"},"file":{"path":"Learn/Swift-10.md","mtime":"2020-06-02T05:59:49.907Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-02T04:49:31.604Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
