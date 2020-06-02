@@ -21,29 +21,6 @@
   }
   ```
 
-# 强制解析
-
-！语法：
-
->当你确定可选类型确实包含值之后，你可以在可选的名字后面加一个感叹号（!）来获取值。这个感叹号表示"我知道这个可选有值，请使用它。"这被称为可选值的强制解析（forced unwrapping）。
-
-```swift
-var myString:String?
-myString = "Hello, Swift!"
-if myString != nil {
-   // 强制解析
-   print( myString! )
-}else{
-   print("myString 值为 nil")
-}
-```
-
-执行结果为：
-
-```sw
-Hello, Swift!
-```
-
 # 区间运算符
 
 ```sw

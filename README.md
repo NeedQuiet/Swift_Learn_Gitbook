@@ -8,10 +8,16 @@
 
 * `2020-5-28`
   * 初建Gitbook
-  * [基本知识点](Learn/Swift-01.md)
-  * [类型相关](Learn/Swift-02.md)
+  * [1.基本知识点](Learn/Swift-01.md)
+  * [2.类型相关](Learn/Swift-02.md)
 * `2020-6-1`
-  * [运算符](Learn/Swift-03.md)
-  * [可选类型相关](Learn/Swift-04.md)
-  * [运算相关](Learn/Swift-05.md)
-  * [String相关](Learn/Swift-06.md)
+  * [3.运算符](Learn/Swift-03.md)
+  * [4.可选类型相关](Learn/Swift-04.md)
+  * [5.运算相关](Learn/Swift-05.md)
+  * [6.String相关](Learn/Swift-06.md) 
+  * [7.Array数组](Learn/Swift-07.md)
+* `2020-6-2`
+  * [8.Set集合](Learn/Swift-08.md)
+  * [9.Dictionary集合](Learn/Swift-09.md)
+  * [10.函数相关](Learn/Swift-10.md)
+  * [11.guard语句](Learn/Swift-11.md)
