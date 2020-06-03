@@ -211,3 +211,161 @@ var value = sum(param: {(a:Int,b:Int) -> Int in
 
 print("value = \(value)")
 ```
+
+# 函数作为返回值
+
+>`禁止套娃`😁
+
+```sw
+func play1(value:Int) -> Int {
+    return value * value
+}
+
+func play2(value:Int) -> Int {
+    return value + value
+}
+
+func test(param:Bool) -> (Int) -> Int {
+    return param ? play1 : play2
+}
+
+let a = test(param: true) // 此时a为play1
+
+a(3) // 9
+```
+
+# 内嵌函数
+
+和上面的套娃一样，更改成内嵌的方式书写
+
+```sw
+func test1(param:Bool) -> (Int) -> Int {
+    
+    func play1(value:Int) -> Int {
+        return value * value
+    }
+
+    func play2(value:Int) -> Int {
+        return value + value
+    }
+    
+    return param ? play1 : play2
+}
+
+let b = test1(param: false) // 此时b为play2
+
+b(3) // 6
+```
+
+# 匿名函数简写
+
+## 1.匿名函数类型
+
+- 无参无返回值
+```sw
+var a:() -> Void = {() -> Void in
+   print("a")
+}
+a()
+```
+- 可简写为:
+```sw
+var a:() -> Void = {
+   print("a")
+}
+a()
+```
+
+- 根据类型推断，还可以简写为
+```sw
+var a = {
+   print("a")
+}
+a()
+```
+
+## 2.匿名函数
+
+1. 无参无返
+
+   - 无参无返回值
+   ```sw
+   func test(param:() -> Void){
+      param()
+   }
+   test(param: {() -> Void in
+      print("写全了")
+   })
+   ```
+
+   - 可简写为
+   ```sw
+   test(param: {print("test简写")})
+   ```
+
+   - 还可继续简写为
+   ```sw
+   test{print("test再次简写")}
+   ```
+
+2. 有参无返
+
+   - 有参无返
+   ```sw
+   func test2(param:(Int)->Void){
+      param(10)
+   }
+   test2(param: {(value:Int) -> Void in
+      print(value)
+   })
+   ```
+
+   - 可简写为
+   ```sw
+   test2(param: {(value:Int) in
+      print(value)
+   })
+   ```
+
+   - 可根据类型推断继续简写为
+   ```sw
+   test2(param: {(value) in
+      print(value)
+   })
+   ```
+
+   - 可再次简写为
+   ```sw
+   test2 { (value) in
+      print(value)
+   }
+   ```
+
+3. 有参有返
+
+   - 有参有返
+   ```sw
+   func test3(param:(Int,Int) -> Int){
+      print(param(10,20))
+   }
+   test3(param: {(item1:Int,item2:Int) -> Int in
+      return item1 + item2
+   })
+   ```
+
+   - 可简写为
+   ```sw
+   test3 { (item1, item2) -> Int in
+      return item1 + item2
+   }
+   ```
+
+   - 可继续简写为
+   ```sw
+   test3(param: {return $0 + $1})
+   ```
+
+   - 可最终简写为
+   ```sw
+   test3(param: {$0 + $1})
+   ```
