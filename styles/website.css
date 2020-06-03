@@ -2,3 +2,11 @@
 .gitbook-link {
   display: none !important;
 }
+
+.markdown-section p code {
+  padding: .1em .2em;
+  font-size: 1em;
+  background-color: #e2dfdf;
+  color: #247b7c;
+  border-radius: 0.5em;
+}
