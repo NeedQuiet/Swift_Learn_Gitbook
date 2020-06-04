@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>5.运算相关 · Daning·Swift</title>
+        <title>16.类 · Daning·Swift</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Swift-05.html" />
+    <link rel="next" href="Swift-16.html" />
     
     
-    <link rel="prev" href="Swift-04.html" />
+    <link rel="prev" href="Swift-15.html" />
     
 
     </head>
@@ -440,7 +440,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.5" data-path="Swift-05.html">
+        <li class="chapter " data-level="1.2.5" data-path="Swift-05.html">
             
                 <a href="Swift-05.html">
             
@@ -1221,7 +1221,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.16" data-path="Swift-16.html">
+        <li class="chapter active" data-level="1.2.16" data-path="Swift-16.html">
             
                 <a href="Swift-16.html">
             
@@ -1327,7 +1327,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >5.运算相关</a>
+        <a href=".." >16.类</a>
     </h1>
 </div>
 
@@ -1342,76 +1342,107 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#switch-case"><b></b>switch case</a></li><li><span class="title-icon "></span><a href="#for-in&#x5FAA;&#x73AF;"><b></b>for in&#x5FAA;&#x73AF;</a></li><li><span class="title-icon "></span><a href="#while-&#x5FAA;&#x73AF;"><b></b>while &#x5FAA;&#x73AF;</a></li></ul></div><a href="#switch-case" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="switch-case"><a name="switch-case" class="anchor-navigation-ex-anchor" href="#switch-case"><i class="fa fa-link" aria-hidden="true"></i></a>switch case</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7C7B;&#x7684;&#x5B9A;&#x4E49;"><b></b>&#x7C7B;&#x7684;&#x5B9A;&#x4E49;</a></li><li><span class="title-icon "></span><a href="#&#x7C7B;&#x7684;&#x4F20;&#x503C;"><b></b>&#x7C7B;&#x7684;&#x4F20;&#x503C;</a></li><li><span class="title-icon "></span><a href="#&#x7C7B;&#x7684;&#x7EE7;&#x627F;"><b></b>&#x7C7B;&#x7684;&#x7EE7;&#x627F;</a></li><li><span class="title-icon "></span><a href="#&#x5411;&#x4E0A;&#x4E0B;&#x3001;&#x53EF;&#x9009;&#x7C7B;&#x578B;&#x8F6C;&#x6362;"><b></b>(&#x5411;&#x4E0A;/&#x4E0B;&#x3001;&#x53EF;&#x9009;)&#x7C7B;&#x578B;&#x8F6C;&#x6362;</a></li></ul></div><a href="#&#x7C7B;&#x7684;&#x5B9A;&#x4E49;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7C7B;&#x7684;&#x5B9A;&#x4E49;"><a name="&#x7C7B;&#x7684;&#x5B9A;&#x4E49;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x7684;&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x7684;&#x5B9A;&#x4E49;</h1>
 <ul>
-<li><p>Swift&#x91CC;&#x7684;switch case&#x8BED;&#x8A00;&#x4E0D;&#x50CF;OC&#xFF0C;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x5199;break&#xFF1A;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">let</span> a<span class="token punctuation">:</span><span class="token builtin">Int</span><span class="token operator">!</span> <span class="token operator">=</span> <span class="token number">2</span>
-<span class="token keyword">switch</span> a <span class="token punctuation">{</span>
-<span class="token keyword">case</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">:</span>
-  <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;case 1~3&quot;</span><span class="token punctuation">)</span>
-<span class="token keyword">case</span> <span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">:</span>
-  <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;case 4~5&quot;</span><span class="token punctuation">)</span>
-<span class="token keyword">default</span><span class="token punctuation">:</span>
-  <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;case &#x5176;&#x4ED6;&quot;</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-<span class="token comment">// &#x8F93;&#x51FA;: case 1~3</span>
-</code></pre>
-</li>
-<li><p>Fallthrough &#x7A7F;&#x900F;&#xFF1A;</p>
-<blockquote>
-<p>&#x5728;&#x5927;&#x591A;&#x6570;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;switch &#x8BED;&#x53E5;&#x5757;&#x4E2D;&#xFF0C;case &#x8981;&#x7D27;&#x8DDF; break&#xFF0C;&#x5426;&#x5219; case &#x4E4B;&#x540E;&#x7684;&#x8BED;&#x53E5;&#x4F1A;&#x987A;&#x5E8F;&#x8FD0;&#x884C;&#xFF0C;&#x800C;&#x5728; Swift &#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x4E0B;&#x53BB;&#x7684;&#xFF0C;switch &#x4E5F;&#x4F1A;&#x7EC8;&#x6B62;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5728; Swift &#x4E2D;&#x8BA9; case &#x4E4B;&#x540E;&#x7684;&#x8BED;&#x53E5;&#x4F1A;&#x6309;&#x987A;&#x5E8F;&#x7EE7;&#x7EED;&#x8FD0;&#x884C;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x4F7F;&#x7528; fallthrough &#x8BED;&#x53E5;&#x3002;</p>
-</blockquote>
-<pre class="language-"><code class="lang-sw">  <span class="token keyword">let</span> value <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span>
-  <span class="token keyword">switch</span> value <span class="token punctuation">{</span>
-  <span class="token keyword">case</span> <span class="token keyword">let</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span> <span class="token keyword">where</span> a <span class="token operator">&lt;</span> b<span class="token punctuation">:</span>
-      <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;case 1: <span class="token interpolation"><span class="token delimiter variable">\(</span>a<span class="token delimiter variable">)</span></span>,<span class="token interpolation"><span class="token delimiter variable">\(</span>b<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
-      <span class="token keyword">fallthrough</span>
-  <span class="token keyword">case</span> <span class="token keyword">let</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">:</span>
-      <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;case 2: <span class="token interpolation"><span class="token delimiter variable">\(</span>b<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
-  <span class="token keyword">default</span><span class="token punctuation">:</span>
-      <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;case &#x5176;&#x4ED6;&quot;</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-  <span class="token comment">/*
-  &#x8F93;&#x51FA;&#xFF1A;
-      case 1: 10,20
-      case 2: 20
-  */</span>
-</code></pre>
-</li>
+<li>&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF1A;&#x6BCF;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x5C31;&#x4F1A;&#x4E3A;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x5206;&#x914D;&#x4E00;&#x6B21;&#x5185;&#x5B58;&#xFF0C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x6709;&#x591A;&#x4E2A;&#x62F7;&#x8D1D;&#xFF0C;&#x4E92;&#x4E0D;&#x5F71;&#x54CD;&#xFF08;&#x7075;&#x6D3B;&#xFF09;</li>
+<li>&#x9759;&#x6001;&#x53D8;&#x91CF;&#xFF1A;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x62F7;&#x8D1D;&#xFF08;&#x8282;&#x7701;&#x5185;&#x5B58;&#xFF09;&#xFF0C;&#x53EF;&#x7528;&#x7C7B;&#x540D;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#xFF08;&#x65B9;&#x4FBF;&#xFF09;</li>
 </ul>
-<h1 id="for-in&#x5FAA;&#x73AF;"><a name="for-in&#x5FAA;&#x73AF;" class="anchor-navigation-ex-anchor" href="#for-in&#x5FAA;&#x73AF;"><i class="fa fa-link" aria-hidden="true"></i></a>for in&#x5FAA;&#x73AF;</h1>
-<ul>
-<li><p>&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x533A;&#x95F4;&#x8FD0;&#x7B97;&#x7B26;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">for</span> index <span class="token keyword">in</span> <span class="token number">0</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token number">5</span> <span class="token punctuation">{</span>
-  <span class="token function">print</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">class</span> <span class="token class-name">Student</span><span class="token punctuation">{</span>
+    <span class="token comment">//&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;</span>
+    <span class="token keyword">private</span> <span class="token keyword">var</span> name<span class="token punctuation">:</span><span class="token builtin">String</span> <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+
+    <span class="token comment">// &#x9759;&#x6001;&#x53D8;&#x91CF;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">var</span> schoolName <span class="token operator">=</span> <span class="token string">&quot;&#x5BB6;&#x91CC;&#x8E72;&#x5927;&#x5B66;&quot;</span>
+
+    <span class="token comment">//&#x4FBF;&#x5229;&#x6784;&#x9020;&#x5668;&#x662F;&#x5728;init&#x524D;&#x52A0;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x5B50;convenience&#xFF0C;&#x5B83;&#x4E3A;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#x63D0;&#x4F9B;&#x9ED8;&#x8BA4;&#x503C;</span>
+    <span class="token keyword">convenience</span> <span class="token keyword">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span><span class="token keyword">init</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span><span class="token string">&quot;unkonw&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">init</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">func</span> <span class="token function">setName</span><span class="token punctuation">(</span>newName<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>name <span class="token operator">=</span> newName
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">func</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">self</span><span class="token punctuation">.</span>name
+    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-<span class="token comment">//&#x8F93;&#x51FA;&#xFF1A; 0 1 2 3 4 5</span>
-</code></pre>
-</li>
-<li><p>stride&#x51FD;&#x6570;&#xFF1A;&#x53EF;&#x53D8;&#x6B65;&#x957F;&#x7C7B;&#x578B;&#x503C;&#x7684;&#x5E8F;&#x5217;</p>
-<ol>
-<li>stride(from:to:by)&#xFF0C;&#x5F00;&#x533A;&#x95F4;&#x5904;&#x7406;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x503C;&#x4E25;&#x683C;&#x5C0F;&#x4E8E;&#x6700;&#x5927;&#x503C;&#xFF1B;</li>
-<li>stride(from:through:by)&#xFF0C;&#x95ED;&#x533A;&#x95F4;&#x5904;&#x7406;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x503C;&#x5C0F;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;&#x6700;&#x5927;&#x503C;&#xFF1B;</li>
-<li>.reversed(): &#x53CD;&#x5411;</li>
-</ol>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">for</span> index <span class="token keyword">in</span> <span class="token function">stride</span><span class="token punctuation">(</span>from<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> to<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> by<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">print</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span> 
-<span class="token punctuation">}</span> <span class="token comment">// 0 2 4 6 8</span>
 
-<span class="token keyword">for</span> index <span class="token keyword">in</span> <span class="token function">stride</span><span class="token punctuation">(</span>from<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> through<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> by<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token function">print</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span>
-<span class="token punctuation">}</span> <span class="token comment">// 0 2 4 6 8 10</span>
+<span class="token keyword">var</span> student_A <span class="token operator">=</span> <span class="token function">Student</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>student_A<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// unkonw</span>
 
-<span class="token keyword">for</span> index <span class="token keyword">in</span> <span class="token function">stride</span><span class="token punctuation">(</span>from<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> to<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> by<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">reversed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token function">print</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span>
-<span class="token punctuation">}</span> <span class="token comment">// 8 6 4 2 0</span>
+<span class="token keyword">var</span> student_B <span class="token operator">=</span> <span class="token function">Student</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span><span class="token string">&quot;&#x8001;&#x738B;&quot;</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>student_B<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &#x8001;&#x738B;</span>
+
+student_B<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span>newName<span class="token punctuation">:</span> <span class="token string">&quot;&#x9694;&#x58C1;&#x8001;&#x738B;&quot;</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>student_B<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &#x9694;&#x58C1;&#x8001;&#x738B;</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token builtin">Student</span><span class="token punctuation">.</span>schoolName<span class="token punctuation">)</span> <span class="token comment">// &#x5BB6;&#x91CC;&#x8E72;&#x5927;&#x5B66;</span>
+
+<span class="token builtin">Student</span><span class="token punctuation">.</span>schoolName <span class="token operator">=</span> <span class="token string">&quot;&#x8E72;&#x4E0D;&#x4F4F;&#x5927;&#x5B66;&quot;</span>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token builtin">Student</span><span class="token punctuation">.</span>schoolName<span class="token punctuation">)</span> <span class="token comment">// &#x8E72;&#x4E0D;&#x4F4F;&#x5927;&#x5B66;</span>
 </code></pre>
-</li>
-</ul>
-<h1 id="while-&#x5FAA;&#x73AF;"><a name="while-&#x5FAA;&#x73AF;" class="anchor-navigation-ex-anchor" href="#while-&#x5FAA;&#x73AF;"><i class="fa fa-link" aria-hidden="true"></i></a>while &#x5FAA;&#x73AF;</h1>
+<h1 id="&#x7C7B;&#x7684;&#x4F20;&#x503C;"><a name="&#x7C7B;&#x7684;&#x4F20;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x7684;&#x4F20;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x7684;&#x4F20;&#x503C;</h1>
+<p>&#x7C7B;&#x7684;&#x4F20;&#x503C;&#x4E3A;<code>&#x6D45;&#x62F7;&#x8D1D;</code></p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> student_A <span class="token operator">=</span> <span class="token function">Student</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span><span class="token string">&quot;&#x8001;&#x738B;&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> student_B <span class="token operator">=</span> student_A <span class="token comment">// &#x548C;&#x7ED3;&#x6784;&#x4F53;&#x4E0D;&#x540C;&#xFF0C;&#x7C7B;&#x5373;&#x4F7F;&#x7528;let&#x5B9A;&#x4E49;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x503C;</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>student_A<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &#x8001;&#x738B;</span>
+<span class="token function">print</span><span class="token punctuation">(</span>student_B<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &#x8001;&#x738B;</span>
+
+student_B<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span>newName<span class="token punctuation">:</span> <span class="token string">&quot;&#x8001;&#x738B;2&quot;</span><span class="token punctuation">)</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>student_A<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &#x8001;&#x738B;2</span>
+<span class="token function">print</span><span class="token punctuation">(</span>student_B<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &#x8001;&#x738B;2</span>
+</code></pre>
+<h1 id="&#x7C7B;&#x7684;&#x7EE7;&#x627F;"><a name="&#x7C7B;&#x7684;&#x7EE7;&#x627F;" class="anchor-navigation-ex-anchor" href="#&#x7C7B;&#x7684;&#x7EE7;&#x627F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7C7B;&#x7684;&#x7EE7;&#x627F;</h1>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">var</span> name<span class="token punctuation">:</span> <span class="token builtin">String</span>
+
+    <span class="token keyword">init</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">func</span> <span class="token function">setName</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">func</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">self</span><span class="token punctuation">.</span>name
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Student &#x7EE7;&#x627F;&#x4E86; Preson&#x7C7B;</span>
+<span class="token keyword">class</span> <span class="token class-name">Student</span><span class="token punctuation">:</span> <span class="token builtin">Person</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">var</span> age<span class="token punctuation">:</span> <span class="token builtin">Int</span> <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> per <span class="token operator">=</span> <span class="token function">Person</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string">&quot;Person&quot;</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>per<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// Person</span>
+
+<span class="token keyword">var</span> stu <span class="token operator">=</span> <span class="token function">Student</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string">&quot;Student&quot;</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>stu<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// Student</span>
+stu<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string">&quot;New Student&quot;</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>stu<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// New Student</span>
+stu<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">100</span>
+<span class="token function">print</span><span class="token punctuation">(</span>stu<span class="token punctuation">.</span>age<span class="token punctuation">)</span> <span class="token comment">// 100</span>
+</code></pre>
+<h1 id="&#x5411;&#x4E0A;&#x4E0B;&#x3001;&#x53EF;&#x9009;&#x7C7B;&#x578B;&#x8F6C;&#x6362;"><a name="&#x5411;&#x4E0A;&#x4E0B;&#x3001;&#x53EF;&#x9009;&#x7C7B;&#x578B;&#x8F6C;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x5411;&#x4E0A;&#x4E0B;&#x3001;&#x53EF;&#x9009;&#x7C7B;&#x578B;&#x8F6C;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>(&#x5411;&#x4E0A;/&#x4E0B;&#x3001;&#x53EF;&#x9009;)&#x7C7B;&#x578B;&#x8F6C;&#x6362;</h1>
+<p>&#x4EE5;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E3A;&#x4F8B;&#xFF0C;&#x5982;&#x679C;&#x5C06;stu&#x7684;&#x7C7B;&#x578B;&#x8BBE;&#x5B9A;&#x4E3A;Any&#xFF0C;&#x90A3;&#x4E48;&#x662F;&#x65E0;&#x6CD5;&#x8C03;&#x7528;<code>stu.getName()</code>&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x8981;&#x4F7F;&#x7528;<code>as</code>&#x64CD;&#x4F5C;&#x7B26;&#x8FDB;&#x884C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> stu<span class="token punctuation">:</span><span class="token builtin">Any</span> <span class="token operator">=</span> <span class="token function">Student</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string">&quot;Student&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">let</span> s <span class="token operator">=</span> stu <span class="token keyword">as</span><span class="token operator">!</span> <span class="token builtin">Student</span> <span class="token comment">// &#x5411;&#x4E0B;&#x7C7B;&#x578B;&#x8F6C;&#x6362;</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
 <ul>
-<li>while&#x5FAA;&#x73AF;&#x6CA1;&#x4EC0;&#x4E48;&#x597D;&#x8BF4;&#x7684;</li>
-<li>Swift&#x4E2D;&#x7684; <code>do while</code> &#x53EB; <code>repeat while</code></li>
+<li>as &#xFF1A;&#x4ECE;&#x6D3E;&#x751F;&#x7C7B;&#x8F6C;&#x6362;&#x4E3A;&#x57FA;&#x7C7B;&#xFF0C;&#x5411;&#x4E0A;&#x8F6C;&#x578B;&#xFF08;upcasts&#xFF09;</li>
+<li>as! &#xFF1A;&#x5411;&#x4E0B;&#x8F6C;&#x578B;&#xFF08;Downcasting&#xFF09;&#x65F6;&#x4F7F;&#x7528;&#x3002;&#x7531;&#x4E8E;&#x662F;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x5982;&#x679C;&#x8F6C;&#x6362;&#x5931;&#x8D25;&#x4F1A;&#x62A5; runtime &#x8FD0;&#x884C;&#x9519;&#x8BEF;&#x3002;</li>
+<li>as? &#xFF1A;as? &#x548C; as! &#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x8F6C;&#x6362;&#x89C4;&#x5219;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#x3002;&#x4F46; as? &#x5982;&#x679C;&#x8F6C;&#x6362;&#x4E0D;&#x6210;&#x529F;&#x7684;&#x65F6;&#x5019;&#x4FBF;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; nil &#x5BF9;&#x8C61;&#x3002;&#x6210;&#x529F;&#x7684;&#x8BDD;&#x8FD4;&#x56DE;&#x53EF;&#x9009;&#x7C7B;&#x578B;&#x503C;&#x3002;&#x7531;&#x4E8E; as? &#x5728;&#x8F6C;&#x6362;&#x5931;&#x8D25;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#xFF0C;&#x6240;&#x4EE5;&#x5BF9;&#x4E8E;&#x5982;&#x679C;&#x80FD;&#x786E;&#x4FDD;100%&#x4F1A;&#x6210;&#x529F;&#x7684;&#x8F6C;&#x6362;&#x5219;&#x53EF;&#x4F7F;&#x7528; as!&#xFF0C;&#x5426;&#x5219;&#x4F7F;&#x7528; as?</li>
 </ul>
 
                                 
@@ -1440,12 +1471,12 @@
 
             
                 
-                <a href="Swift-04.html#隐式展开" class="navigation navigation-prev " aria-label="Previous page: 隐式展开">
+                <a href="Swift-15.html#多个参数" class="navigation navigation-prev " aria-label="Previous page: 多个参数">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Swift-05.html#switch-case" class="navigation navigation-next " aria-label="Next page: switch case">
+                <a href="Swift-16.html#类的定义" class="navigation navigation-next " aria-label="Next page: 类的定义">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1456,7 +1487,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5.运算相关","level":"1.2.5","depth":2,"next":{"title":"switch case","level":"1.2.5.1","depth":3,"anchor":"#switch-case","path":"Learn/Swift-05.md","ref":"Learn/Swift-05.md#switch-case","articles":[]},"previous":{"title":"隐式展开","level":"1.2.4.4","depth":3,"anchor":"#隐式展开","path":"Learn/Swift-04.md","ref":"Learn/Swift-04.md#隐式展开","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","js-sequence-diagram-full@>=0.3.1","prism","-highlight","github","anchor-navigation-ex","expandable-chapters-small","-livereload","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec","ObjectiveC":"objectivec","sw":"swift"},"ignore":["sequence"]},"github":{"url":"https://github.com/NeedQuiet/Swift_Learn_Gitbook"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Daning","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daning·Swift","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/NeedQuiet","个人博客":"https://daning.netlify.app/"}},"gitbook":"*"},"file":{"path":"Learn/Swift-05.md","mtime":"2020-06-03T05:51:46.145Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-04T06:21:29.258Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"16.类","level":"1.2.16","depth":2,"next":{"title":"类的定义","level":"1.2.16.1","depth":3,"anchor":"#类的定义","path":"Learn/Swift-16.md","ref":"Learn/Swift-16.md#类的定义","articles":[]},"previous":{"title":"多个参数","level":"1.2.15.3","depth":3,"anchor":"#多个参数","path":"Learn/Swift-15.md","ref":"Learn/Swift-15.md#多个参数","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","js-sequence-diagram-full@>=0.3.1","prism","-highlight","github","anchor-navigation-ex","expandable-chapters-small","-livereload","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec","ObjectiveC":"objectivec","sw":"swift"},"ignore":["sequence"]},"github":{"url":"https://github.com/NeedQuiet/Swift_Learn_Gitbook"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Daning","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daning·Swift","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/NeedQuiet","个人博客":"https://daning.netlify.app/"}},"gitbook":"*"},"file":{"path":"Learn/Swift-16.md","mtime":"2020-06-04T06:55:11.373Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-04T06:21:29.258Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
