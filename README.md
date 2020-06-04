@@ -4,7 +4,7 @@
 
 >此文档内容来自于 [Swift编程基础视频教程](https://www.bilibili.com/video/BV144411C7Gg?from=search&seid=12798090312513947407)
 
-##时间轴
+#时间轴
 
 * `2020-5-28`
   * 初建Gitbook
@@ -25,3 +25,6 @@
   * [12.枚举相关](Learn/Swift-12.md)
   * [13.结构体](Learn/Swift-13.md)
   * [14.属性相关](Learn/Swift-14.md)
+* `2020-6-4`
+  * [15.下标(subscript)](Learn/Swift-15.md)
+  * [16.类](Learn/Swift-16.md)

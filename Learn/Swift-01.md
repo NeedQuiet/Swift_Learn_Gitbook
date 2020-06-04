@@ -23,6 +23,12 @@ var e:Character = "e" //字符
 var f:String = "Hello, playground" //字符串
 ```
 
+任意类型: 
+```sw
+var a:Any = 10 // Any 可以修饰任何类型
+var b:AnyObject = ClassTest(name:"test") // AnyObject 只能修饰类的类型
+```
+
 #变量、常量
 - 变量：var
 

@@ -32,7 +32,7 @@
         "objc": "objectivec",
         "objective-c": "objectivec",
         "ObjectiveC": "objectivec",
-        "sw":"swift"
+        "sw": "swift"
       },
       "ignore": ["sequence"]
     },
@@ -43,6 +43,11 @@
       "showGoTop": true,
       "showLevel": false,
       "printLog": true
+    },
+    "fontSettings": {
+      "theme": "night",
+      "family": "sans",
+      "size": 2
     }
   }
 }

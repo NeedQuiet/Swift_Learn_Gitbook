@@ -1,4 +1,4 @@
-# 属性计算(重写set/get)
+# 属性计算(set/get)
 
 以结构体为例：
 
@@ -31,7 +31,7 @@ p.name = "swift" // set - swift
 print(p.name)    // get / swift iOS
 ```
 
-# 属性观察
+# 属性观察(willSet/didSet)
 
 >跟OC里的KVO一样
 
