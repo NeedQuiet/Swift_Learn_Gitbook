@@ -25,6 +25,11 @@
     "-livereload"
   ],
   "pluginsConfig": {
+    "fontsettings": {
+      "theme": "night",
+      "family": "sans",
+      "size": 1
+    },
     "prism": {
       "css": ["prismjs/themes/prism-okaidia.css"],
       "lang": {
@@ -43,11 +48,6 @@
       "showGoTop": true,
       "showLevel": false,
       "printLog": true
-    },
-    "fontSettings": {
-      "theme": "night",
-      "family": "sans",
-      "size": 2
     }
   }
 }
