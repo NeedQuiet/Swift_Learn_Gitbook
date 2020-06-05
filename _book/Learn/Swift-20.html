@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>12.枚举 · Daning·Swift</title>
+        <title>20.初始化器 · Daning·Swift</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Swift-12.html" />
+    <link rel="next" href="Swift-20.html" />
     
     
-    <link rel="prev" href="Swift-11.html" />
+    <link rel="prev" href="Swift-19.html" />
     
 
     </head>
@@ -1041,7 +1041,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.12" data-path="Swift-12.html">
+        <li class="chapter " data-level="1.2.12" data-path="Swift-12.html">
             
                 <a href="Swift-12.html">
             
@@ -1409,7 +1409,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.20" data-path="Swift-20.html">
+        <li class="chapter active" data-level="1.2.20" data-path="Swift-20.html">
             
                 <a href="Swift-20.html">
             
@@ -1528,7 +1528,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >12.枚举</a>
+        <a href=".." >20.初始化器</a>
     </h1>
 </div>
 
@@ -1543,80 +1543,85 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;"><b></b>&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;</a></li><li><span class="title-icon "></span><a href="#&#x904D;&#x5386;&#x679A;&#x4E3E;"><b></b>&#x904D;&#x5386;&#x679A;&#x4E3E;</a></li></ul></div><a href="#&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;"><a name="&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;</h1>
-<ul>
-<li><p>&#x57FA;&#x672C;&#x65B9;&#x5F0F;&#xFF1A;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">enum</span> <span class="token builtin">TestEnum</span><span class="token punctuation">{</span>
-  <span class="token keyword">case</span> A
-  <span class="token keyword">case</span> B
-  <span class="token keyword">case</span> C
-<span class="token punctuation">}</span>
-<span class="token function">print</span><span class="token punctuation">(</span><span class="token builtin">TestEnum</span><span class="token punctuation">.</span>A<span class="token punctuation">)</span> <span class="token comment">// A</span>
-</code></pre>
-<p>&#x6216;&#x8005;&#xFF1A;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">enum</span> <span class="token builtin">TestEnum</span><span class="token punctuation">{</span>
-    <span class="token keyword">case</span> A<span class="token punctuation">,</span>B<span class="token punctuation">,</span>C
-<span class="token punctuation">}</span>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x666E;&#x901A;&#x521D;&#x59CB;&#x5316;&#x5668;"><b></b>&#x666E;&#x901A;&#x521D;&#x59CB;&#x5316;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x53EF;&#x5931;&#x8D25;&#x521D;&#x59CB;&#x5316;&#x5668;"><b></b>&#x53EF;&#x5931;&#x8D25;&#x521D;&#x59CB;&#x5316;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x5FC5;&#x8981;&#x521D;&#x59CB;&#x5316;&#x5668;required"><b></b>&#x5FC5;&#x8981;&#x521D;&#x59CB;&#x5316;&#x5668;(required)</a></li><li><span class="title-icon "></span><a href="#&#x7ED3;&#x6784;&#x4F53;&#x6210;&#x5458;&#x521D;&#x59CB;&#x5316;&#x5668;"><b></b>&#x7ED3;&#x6784;&#x4F53;&#x6210;&#x5458;&#x521D;&#x59CB;&#x5316;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x95ED;&#x5305;&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;&#x521D;&#x59CB;&#x503C;"><b></b>&#x95ED;&#x5305;&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;&#x521D;&#x59CB;&#x503C;</a></li></ul></div><a href="#&#x666E;&#x901A;&#x521D;&#x59CB;&#x5316;&#x5668;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x666E;&#x901A;&#x521D;&#x59CB;&#x5316;&#x5668;"><a name="&#x666E;&#x901A;&#x521D;&#x59CB;&#x5316;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x666E;&#x901A;&#x521D;&#x59CB;&#x5316;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x666E;&#x901A;&#x521D;&#x59CB;&#x5316;&#x5668;</h1>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">class</span> <span class="token class-name">Test</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> name<span class="token punctuation">:</span><span class="token builtin">String</span>
 
-<span class="token function">print</span><span class="token punctuation">(</span><span class="token builtin">TestEnum</span><span class="token punctuation">.</span>B<span class="token punctuation">)</span> <span class="token comment">// B</span>
-</code></pre>
-</li>
-<li><p>&#x8BBE;&#x7F6E;&#x679A;&#x4E3E;&#x503C;&#xFF1A;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">enum</span> <span class="token builtin">TestEnum</span><span class="token punctuation">:</span><span class="token builtin">Int</span><span class="token punctuation">{</span>
-  <span class="token keyword">case</span> A <span class="token operator">=</span> <span class="token number">1</span>
-  <span class="token keyword">case</span> B <span class="token operator">=</span> <span class="token number">2</span>
-  <span class="token keyword">case</span> C <span class="token operator">=</span> <span class="token number">3</span>
-<span class="token punctuation">}</span>
-<span class="token function">print</span><span class="token punctuation">(</span><span class="token builtin">TestEnum</span><span class="token punctuation">.</span>A<span class="token punctuation">)</span> <span class="token comment">// A</span>
-<span class="token function">print</span><span class="token punctuation">(</span><span class="token builtin">TestEnum</span><span class="token punctuation">.</span>A<span class="token punctuation">.</span>rawValue<span class="token punctuation">)</span> <span class="token comment">// 1</span>
-</code></pre>
-</li>
-<li><p>&#x679A;&#x4E3E;&#x76F8;&#x5173;&#x503C;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">enum</span> <span class="token builtin">TestEnum</span><span class="token punctuation">{</span>
-    <span class="token keyword">case</span> <span class="token function">name</span><span class="token punctuation">(</span><span class="token builtin">String</span><span class="token punctuation">)</span>
-    <span class="token keyword">case</span> <span class="token function">age</span><span class="token punctuation">(</span><span class="token builtin">Int</span><span class="token punctuation">)</span>
-    <span class="token keyword">case</span> <span class="token function">xy</span><span class="token punctuation">(</span><span class="token builtin">Int</span><span class="token punctuation">,</span><span class="token builtin">Int</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">func</span> <span class="token function">test</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span><span class="token builtin">TestEnum</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">switch</span> param <span class="token punctuation">{</span>
-    <span class="token keyword">case</span> <span class="token builtin">TestEnum</span><span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5DF2;&#x5339;&#x914D;&quot;</span><span class="token punctuation">)</span>
-    <span class="token keyword">default</span><span class="token punctuation">:</span>
-        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x672A;&#x5339;&#x914D;&quot;</span><span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token function">print</span><span class="token punctuation">(</span><span class="token builtin">TestEnum</span><span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token string">&quot;ABC&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// name(&quot;ABC&quot;)</span>
-<span class="token function">print</span><span class="token punctuation">(</span><span class="token builtin">TestEnum</span><span class="token punctuation">.</span><span class="token function">xy</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// xy(100, 200)</span>
-<span class="token function">test</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span> <span class="token builtin">TestEnum</span><span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token string">&quot;test&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// &#x672A;&#x5339;&#x914D;</span>
-</code></pre>
-</li>
-<li><p>&#x6CE8;&#xFF1A;</p>
-<font color="red">&#x5728;switf&#x4E2D;&#x53EA;&#x6709;&#x7C7B;&#x4E4B;&#x95F4;&#x624D;&#x53EF;&#x4EE5;&#x7528;==&#x6765;&#x6BD4;&#x8F83;&#xFF0C;&#x800C;&#x50CF;&#x679A;&#x4E3E;,&#x7ED3;&#x6784;&#x4F53;&#x8FD9;&#x6837;&#x7684;&#x503C;&#x7C7B;&#x578B;&#x662F;&#x4E0D;&#x53EF;&#x4EE5;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x7528;==&#xFF0C;&#x90A3;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x91CD;&#x5199;&#x76F8;&#x7B49;&#x534F;&#x8BAE;Equatable&#xFF0C;&#x81F3;&#x4E8E;&#x600E;&#x4E48;&#x91CD;&#x5199;&#xFF0C;&#x767E;&#x5EA6;&#x4E00;&#x4E0B;&#x5C31;&#x77E5;&#x9053;&#x4E86;</font>
-
-<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">test</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span><span class="token builtin">TestEnum</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span> param <span class="token operator">==</span> <span class="token builtin">TestEnum</span><span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token string">&quot;hello&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// &#x8FD9;&#x6837;&#x5199;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x4E0D;&#x80FD;&#x7528; == &#x5BF9;&#x6BD4;&#x679A;&#x4E3E;</span>
-        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5DF2;&#x5339;&#x914D;&quot;</span><span class="token punctuation">)</span>
-    <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
-        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x672A;&#x5339;&#x914D;&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">init</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-</li>
-</ul>
-<h1 id="&#x904D;&#x5386;&#x679A;&#x4E3E;"><a name="&#x904D;&#x5386;&#x679A;&#x4E3E;" class="anchor-navigation-ex-anchor" href="#&#x904D;&#x5386;&#x679A;&#x4E3E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x904D;&#x5386;&#x679A;&#x4E3E;</h1>
-<p>&#x9700;&#x8981;&#x7ED9;&#x679A;&#x4E3E;&#x5B9A;&#x4E49;<code>CaseIterable</code>&#x5C5E;&#x6027;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>allCases</code>&#x5C5E;&#x6027;&#x62FF;&#x5230;&#x6240;&#x6709;&#x5C5E;&#x6027;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">enum</span> <span class="token builtin">TestEnum</span><span class="token punctuation">:</span><span class="token builtin">CaseIterable</span><span class="token punctuation">{</span>
-    <span class="token keyword">case</span> A
-    <span class="token keyword">case</span> B
-    <span class="token keyword">case</span> C
+<h1 id="&#x53EF;&#x5931;&#x8D25;&#x521D;&#x59CB;&#x5316;&#x5668;"><a name="&#x53EF;&#x5931;&#x8D25;&#x521D;&#x59CB;&#x5316;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x5931;&#x8D25;&#x521D;&#x59CB;&#x5316;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53EF;&#x5931;&#x8D25;&#x521D;&#x59CB;&#x5316;&#x5668;</h1>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">class</span> <span class="token class-name">Test</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> name<span class="token punctuation">:</span><span class="token builtin">String</span>
+
+    <span class="token keyword">init</span><span class="token operator">?</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> name <span class="token operator">==</span> <span class="token string">&quot;unknow&quot;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token constant">nil</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
+    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">for</span> item <span class="token keyword">in</span> <span class="token builtin">TestEnum</span><span class="token punctuation">.</span>allCases <span class="token punctuation">{</span>
-    <span class="token function">print</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+<span class="token keyword">var</span> t<span class="token punctuation">:</span><span class="token builtin">Test</span><span class="token operator">?</span> <span class="token operator">=</span> <span class="token function">Test</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string">&quot;unknow&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span> <span class="token keyword">let</span> P <span class="token operator">=</span> t <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>P<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x521D;&#x59CB;&#x5316;&#x5931;&#x8D25;&quot;</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
-<span class="token comment">// &#x8F93;&#x51FA; A B C</span>
+<span class="token comment">// &#x8F93;&#x51FA;&#xFF1A; &#x521D;&#x59CB;&#x5316;&#x5931;&#x8D25;</span>
+</code></pre>
+<h1 id="&#x5FC5;&#x8981;&#x521D;&#x59CB;&#x5316;&#x5668;required"><a name="&#x5FC5;&#x8981;&#x521D;&#x59CB;&#x5316;&#x5668;required" class="anchor-navigation-ex-anchor" href="#&#x5FC5;&#x8981;&#x521D;&#x59CB;&#x5316;&#x5668;required"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FC5;&#x8981;&#x521D;&#x59CB;&#x5316;&#x5668;(required)</h1>
+<blockquote>
+<p>required &#x5173;&#x952E;&#x5B57; ,&#x5F3A;&#x5236;&#x5B50;&#x7C7B;&#x4E5F;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;</p>
+</blockquote>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">class</span> <span class="token class-name">Test</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> name<span class="token punctuation">:</span><span class="token builtin">String</span>
+
+    <span class="token keyword">required</span> <span class="token keyword">init</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">self</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">T</span><span class="token punctuation">:</span><span class="token builtin">Test</span><span class="token punctuation">{</span>
+    <span class="token keyword">required</span> <span class="token keyword">init</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token keyword">init</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> name<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> t <span class="token operator">=</span> <span class="token function">T</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token comment">// hello</span>
+</code></pre>
+<h1 id="&#x7ED3;&#x6784;&#x4F53;&#x6210;&#x5458;&#x521D;&#x59CB;&#x5316;&#x5668;"><a name="&#x7ED3;&#x6784;&#x4F53;&#x6210;&#x5458;&#x521D;&#x59CB;&#x5316;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x7ED3;&#x6784;&#x4F53;&#x6210;&#x5458;&#x521D;&#x59CB;&#x5316;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED3;&#x6784;&#x4F53;&#x6210;&#x5458;&#x521D;&#x59CB;&#x5316;&#x5668;</h1>
+<blockquote>
+<p>&#x7ED3;&#x6784;&#x4F53;&#x4E2D;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x521D;&#x59CB;&#x5316;&#x5668;&#xFF0C;&#x7ED3;&#x6784;&#x4F53;&#x4F1A;&#x81EA;&#x52A8;&#x6839;&#x636E;&#x6210;&#x5458;&#x5217;&#x8868;&#x751F;&#x6210;&#x521D;&#x59CB;&#x5316;&#x5668;</p>
+</blockquote>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">struct</span> <span class="token builtin">Test</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> name<span class="token punctuation">:</span><span class="token builtin">String</span>
+
+<span class="token comment">//    init(name:String) {</span>
+<span class="token comment">//        self.name = name</span>
+<span class="token comment">//    }</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> t <span class="token operator">=</span> <span class="token function">Test</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string">&quot;hello&quot;</span><span class="token punctuation">)</span>
+</code></pre>
+<h1 id="&#x95ED;&#x5305;&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;&#x521D;&#x59CB;&#x503C;"><a name="&#x95ED;&#x5305;&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;&#x521D;&#x59CB;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x95ED;&#x5305;&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;&#x521D;&#x59CB;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x95ED;&#x5305;&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;&#x521D;&#x59CB;&#x503C;</h1>
+<p>&#x8BE6;&#x7EC6;&#x7684;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#xFF1A; <a href="https://www.runoob.com/swift/swift-closures.html" target="_blank">Swift &#x95ED;&#x5305;</a></p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">class</span> <span class="token class-name">Test</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> name<span class="token punctuation">:</span><span class="token builtin">String</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token string">&quot;swift&quot;</span><span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">var</span> age<span class="token punctuation">:</span><span class="token builtin">Int</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span>
+        <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">20</span>
+        <span class="token keyword">return</span> a <span class="token operator">+</span> b
+    <span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> t <span class="token operator">=</span> <span class="token function">Test</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span>name<span class="token punctuation">,</span>t<span class="token punctuation">.</span>age<span class="token punctuation">)</span>
+<span class="token comment">// &#x8F93;&#x51FA;&#xFF1A; swift 30</span>
 </code></pre>
 
                                 
@@ -1645,12 +1650,12 @@
 
             
                 
-                <a href="Swift-11.html#利用可选项绑定" class="navigation navigation-prev " aria-label="Previous page: 利用可选项绑定">
+                <a href="Swift-19.html" class="navigation navigation-prev " aria-label="Previous page: 19.延迟属性lazy">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Swift-12.html#定义方式" class="navigation navigation-next " aria-label="Next page: 定义方式">
+                <a href="Swift-20.html#普通初始化器" class="navigation navigation-next " aria-label="Next page: 普通初始化器">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1661,7 +1666,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"12.枚举","level":"1.2.12","depth":2,"next":{"title":"定义方式","level":"1.2.12.1","depth":3,"anchor":"#定义方式","path":"Learn/Swift-12.md","ref":"Learn/Swift-12.md#定义方式","articles":[]},"previous":{"title":"利用可选项绑定","level":"1.2.11.2","depth":3,"anchor":"#利用可选项绑定","path":"Learn/Swift-11.md","ref":"Learn/Swift-11.md#利用可选项绑定","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","js-sequence-diagram-full@>=0.3.1","prism","-highlight","github","anchor-navigation-ex","expandable-chapters-small","-livereload","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec","ObjectiveC":"objectivec","sw":"swift"},"ignore":["sequence"]},"github":{"url":"https://github.com/NeedQuiet/Swift_Learn_Gitbook"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"night","family":"sans","size":1},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Daning","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daning·Swift","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/NeedQuiet","个人博客":"https://daning.netlify.app/"}},"gitbook":"*"},"file":{"path":"Learn/Swift-12.md","mtime":"2020-06-04T11:03:24.374Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-05T11:28:03.457Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"20.初始化器","level":"1.2.20","depth":2,"next":{"title":"普通初始化器","level":"1.2.20.1","depth":3,"anchor":"#普通初始化器","path":"Learn/Swift-20.md","ref":"Learn/Swift-20.md#普通初始化器","articles":[]},"previous":{"title":"19.延迟属性lazy","level":"1.2.19","depth":2,"path":"Learn/Swift-19.md","ref":"Learn/Swift-19.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","js-sequence-diagram-full@>=0.3.1","prism","-highlight","github","anchor-navigation-ex","expandable-chapters-small","-livereload","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec","ObjectiveC":"objectivec","sw":"swift"},"ignore":["sequence"]},"github":{"url":"https://github.com/NeedQuiet/Swift_Learn_Gitbook"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"night","family":"sans","size":1},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Daning","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daning·Swift","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/NeedQuiet","个人博客":"https://daning.netlify.app/"}},"gitbook":"*"},"file":{"path":"Learn/Swift-20.md","mtime":"2020-06-05T11:19:09.200Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-05T11:28:03.457Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

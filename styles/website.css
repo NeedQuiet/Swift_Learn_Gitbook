@@ -4,24 +4,45 @@
 }
 
 .markdown-section p code {
-  padding: .1em .2em;
+  padding: 0.1em 0.2em;
   font-size: 1em;
   background-color: #e2dfdf;
   color: #247b7c;
   border-radius: 0.5em;
 }
-
-/* Night style下搜索框相关色 */
-.color-theme-2 .book-summary #book-search-input{
+/* ***************************** Night style ***************************** */
+/* 下搜索框相关色 */
+.color-theme-2 .book-summary #book-search-input {
   background: #2d3143;
   border-bottom: 1px solid #3b3f54;
 }
 
-.color-theme-2 #book-search-results .search-results .has-results .search-results-item>:last-child {
+.color-theme-2
+  #book-search-results
+  .search-results
+  .has-results
+  .search-results-item
+  > :last-child {
   color: #7c8593;
 }
 
-/* Sepia style下搜索框背景色 */
-.color-theme-1 .book-summary #book-search-input{
+/* 标记 > 内容颜色 */
+.book.color-theme-2 .markdown-section blockquote {
+  color: #2bdee8;
+}
+
+.book.color-theme-2
+  .book-body
+  .page-wrapper
+  .page-inner
+  section.normal
+  blockquote {
+  border-color: #2099a0;
+  background-color: #262835;
+}
+
+/* ***************************** Sepia style ***************************** */
+/* 下搜索框背景色 */
+.color-theme-1 .book-summary #book-search-input {
   background: #111111;
 }

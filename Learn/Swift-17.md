@@ -8,7 +8,7 @@ swift中访问权限由大到小依次为：open，public，internal（默认）
 - fileprivate：在当前文件内可以被访问。
 - private：在当前类中能被访问，extension中不能访问。
 
-# 重写关键字: override
+# 重写: override
 
 重写父类方法, 必须加上override关键字
 
@@ -36,3 +36,86 @@ sm.sleep()
      子类睡觉
  */
 ```
+
+# 禁止重写: final
+final关键字可以在`class`、`func`和`var`前修饰。表示不允许对其修饰的内容进行继承或者重新操作。
+
+```sw
+class Parent {
+   final func method1() {
+       //权限验证（必须执行）
+       //.....
+        
+       method2()
+        
+       //下面是日志记录（必须执行）
+       //..........
+   }
+    
+   func method2(){
+       //父类的实现
+       //......
+   }
+}
+
+class Child : Parent {
+   //只能重写父类的method2方法，不能重写method1方法
+   override func method2() {
+       //子类的实现
+       //......
+   }
+}
+```
+
+# 扩展: extension
+
+- 对类进行拓展：
+
+  ```sw
+  class A{
+      
+  }
+
+  extension A{
+      func printString(name:String) {
+          print("拓展方法：" + name)
+      }
+  }
+
+  let a = A()
+  a.printString(name: "Test")
+
+  // 输出： 拓展方法：Test
+  ```
+
+- 对String进行拓展
+
+  ```sw
+  extension String{
+      func toString() -> String {
+          return "长度 = " + String(self.count)
+      }
+  }
+
+  var Str:String = "hello"
+  print(Str.toString())
+  //输出： 长度 = 5
+  ```
+
+# 泛型
+
+简单理解就是用来代替任何类型
+
+```sw
+func toString<T>(param:T) -> T {
+    return param
+}
+
+print(toString(param: "hello"))
+print(toString(param: 10))
+print(toString(param: [1,2,3]))
+```
+
+# 必要初始化器: required
+
+参考：[必要初始化器: required](./Swift-20.md#必要初始化器required)
