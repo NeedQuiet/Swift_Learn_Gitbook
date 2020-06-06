@@ -99,3 +99,5 @@
     * [必要初始化器: required](Learn/Swift-20.md#必要初始化器required)
     * [结构体成员初始化器](Learn/Swift-20.md#结构体成员初始化器)
     * [闭包设置属性初始值](Learn/Swift-20.md#闭包设置属性初始值)
+    * [反初始化器](Learn/Swift-20.md#反初始化器)
+  * [21.弱引用](Learn/Swift-21.md)

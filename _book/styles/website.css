@@ -28,7 +28,7 @@
 
 /* 标记 > 内容颜色 */
 .book.color-theme-2 .markdown-section blockquote {
-  color: #2bdee8;
+  color: #ffffff;
 }
 
 .book.color-theme-2
@@ -39,6 +39,11 @@
   blockquote {
   border-color: #2099a0;
   background-color: #262835;
+}
+
+/* 点击按钮颜色 */
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal a{
+  color: #3fd3fb;
 }
 
 /* ***************************** Sepia style ***************************** */

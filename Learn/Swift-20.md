@@ -91,3 +91,27 @@ var t = Test()
 print(t.name,t.age)
 // 输出： swift 30
 ```
+
+# 反初始化器
+
+> 其实就是OC里的 `dealloc`
+
+```sw
+class Test{
+    var name:String
+    init(name:String) {
+        self.name = name
+    }
+    
+    deinit {
+        print("Test被销毁")
+    }
+}
+
+var t1:Test? = Test(name: "hello")
+
+var t2 = t1
+
+t1 = nil
+t2 = nil // Test被销毁
+```
