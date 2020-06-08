@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>9.Dictionary集合 · Daning·Swift</title>
+        <title>23.尾随闭包 · Daning·Swift</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Swift-09.html" />
     
-    
-    <link rel="prev" href="Swift-08.html" />
+    <link rel="prev" href="Swift-22.html" />
     
 
     </head>
@@ -776,7 +774,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.9" data-path="Swift-09.html">
+        <li class="chapter " data-level="1.2.9" data-path="Swift-09.html">
             
                 <a href="Swift-09.html">
             
@@ -1590,7 +1588,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.23" data-path="Swift-23.html">
+        <li class="chapter active" data-level="1.2.23" data-path="Swift-23.html">
             
                 <a href="Swift-23.html">
             
@@ -1638,7 +1636,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >9.Dictionary集合</a>
+        <a href=".." >23.尾随闭包</a>
     </h1>
 </div>
 
@@ -1653,52 +1651,72 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><b></b>&#x57FA;&#x672C;&#x64CD;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#&#x589E;"><b></b>&#x589E;</a></li><li><span class="title-icon "></span><a href="#&#x5220;"><b></b>&#x5220;</a></li><li><span class="title-icon "></span><a href="#&#x6539;"><b></b>&#x6539;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;"><b></b>&#x67E5;</a></li><li><span class="title-icon "></span><a href="#&#x904D;&#x5386;"><b></b>&#x904D;&#x5386;</a></li></ul></div><a href="#&#x57FA;&#x672C;&#x64CD;&#x4F5C;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><a name="&#x57FA;&#x672C;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x672C;&#x64CD;&#x4F5C;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5C3E;&#x968F;&#x95ED;&#x5305;"><b></b>&#x5C3E;&#x968F;&#x95ED;&#x5305;</a></li></ul></div><a href="#&#x5C3E;&#x968F;&#x95ED;&#x5305;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><blockquote>
+<p>&#x4E00;&#x4E2A;&#x65E0;&#x540D;&#x51FD;&#x6570;&#xFF08;&#x95ED;&#x5305;&#xFF09;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x7ED9;&#x4E00;&#x4E2A;&#x6B63;&#x5E38;&#x7684;&#x51FD;&#x6570;</p>
+</blockquote>
+<h1 id="&#x5C3E;&#x968F;&#x95ED;&#x5305;"><a name="&#x5C3E;&#x968F;&#x95ED;&#x5305;" class="anchor-navigation-ex-anchor" href="#&#x5C3E;&#x968F;&#x95ED;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C3E;&#x968F;&#x95ED;&#x5305;</h1>
+<p>&#x5176;&#x5B9E;&#x524D;&#x9762;&#x7684;&#x533F;&#x540D;&#x51FD;&#x6570;&#x4E2D;&#x6709;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x8FC7;&#xFF1A;<a href="Swift-10.html#&#x533F;&#x540D;&#x51FD;&#x6570;&#x53CA;&#x7B80;&#x5199;">10.&#x51FD;&#x6570;-&gt;&#x533F;&#x540D;&#x51FD;&#x6570;&#x53CA;&#x7B80;&#x5199;</a></p>
 <ul>
-<li>&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;</li>
-</ul>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> a<span class="token punctuation">:</span><span class="token builtin">Dictionary</span><span class="token operator">&lt;</span><span class="token builtin">String</span><span class="token punctuation">,</span><span class="token builtin">String</span><span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;A&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;B&quot;</span><span class="token punctuation">]</span>
-<span class="token keyword">var</span> b<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token builtin">Int</span><span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">:</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">]</span>
-<span class="token keyword">var</span> c <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token string">&quot;c&quot;</span><span class="token punctuation">]</span>
-</code></pre>
-<h1 id="&#x589E;"><a name="&#x589E;" class="anchor-navigation-ex-anchor" href="#&#x589E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x589E;</h1>
-<p>&#x6709;&#x5219;&#x4FEE;&#x6539;&#xFF0C;&#x65E0;&#x5219;&#x589E;&#x52A0;</p>
-<pre class="language-"><code class="lang-sw">a<span class="token punctuation">.</span><span class="token function">updateValue</span><span class="token punctuation">(</span><span class="token string">&quot;swift&quot;</span><span class="token punctuation">,</span> forKey<span class="token punctuation">:</span> <span class="token string">&quot;ios&quot;</span><span class="token punctuation">)</span>
-</code></pre>
-<h1 id="&#x5220;"><a name="&#x5220;" class="anchor-navigation-ex-anchor" href="#&#x5220;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;</h1>
-<pre class="language-"><code class="lang-sw">a<span class="token punctuation">.</span><span class="token function">removeValue</span><span class="token punctuation">(</span>forKey<span class="token punctuation">:</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">)</span> <span class="token comment">// key&#x4E0D;&#x5B58;&#x5728;&#x4E5F;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;</span>
-</code></pre>
-<p>&#x901A;&#x8FC7;&#x8FC7;&#x6EE4;&#x5220;&#x9664;</p>
-<pre class="language-"><code class="lang-sw">a<span class="token punctuation">.</span><span class="token builtin">filter</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>key<span class="token punctuation">,</span>value<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Bool</span> <span class="token keyword">in</span>
-    <span class="token keyword">if</span> key <span class="token operator">==</span> <span class="token string">&quot;b&quot;</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token boolean">false</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> <span class="token boolean">true</span>
+<li><p>&#x6709;&#x53C2;&#x6570; &#x65E0;&#x8FD4;&#x56DE;&#x503C;</p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">play1</span><span class="token punctuation">(</span>param1<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">,</span>param2<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token builtin">String</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token builtin">Void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">param2</span><span class="token punctuation">(</span>param1 <span class="token operator">+</span> <span class="token string">&quot; - Swift&quot;</span><span class="token punctuation">)</span> <span class="token comment">// &#x7B80;&#x5199;&#x4E86;return</span>
 <span class="token punctuation">}</span>
-</code></pre>
-<h1 id="&#x6539;"><a name="&#x6539;" class="anchor-navigation-ex-anchor" href="#&#x6539;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6539;</h1>
-<pre class="language-"><code class="lang-sw">a<span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&quot;C&quot;</span>
-&#x6216;&#x8005;
-a<span class="token punctuation">.</span><span class="token function">updateValue</span><span class="token punctuation">(</span><span class="token string">&quot;swift&quot;</span><span class="token punctuation">,</span> forKey<span class="token punctuation">:</span> <span class="token string">&quot;ios&quot;</span><span class="token punctuation">)</span>
-</code></pre>
-<h1 id="&#x67E5;"><a name="&#x67E5;" class="anchor-navigation-ex-anchor" href="#&#x67E5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;</h1>
-<ul>
-<li><p>&#x4E00;&#x822C;&#x67E5;&#x8BE2;&#xFF1A;</p>
-<pre class="language-"><code class="lang-sw"><span class="token function">print</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token string">&quot;asd&quot;</span><span class="token punctuation">]</span> <span class="token operator">?</span><span class="token operator">?</span> <span class="token string">&quot;unknow&quot;</span><span class="token punctuation">)</span> <span class="token comment">// unknow</span>
-</code></pre>
-</li>
-<li><p>&#x53EF;&#x9009;&#x7ED1;&#x5B9A;&#x67E5;&#x8BE2;&#xFF1A;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">if</span> <span class="token keyword">let</span> value <span class="token operator">=</span> a<span class="token punctuation">[</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
-  <span class="token function">print</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token comment">// A</span>
+
+<span class="token function">play1</span><span class="token punctuation">(</span>param1<span class="token punctuation">:</span> <span class="token string">&quot;&#x6B63;&#x5E38;&#x5199;&#x6CD5;&quot;</span><span class="token punctuation">,</span> param2<span class="token punctuation">:</span>  <span class="token punctuation">{</span><span class="token punctuation">(</span>data<span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">Void</span> <span class="token keyword">in</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">play1</span><span class="token punctuation">(</span>param1<span class="token punctuation">:</span> <span class="token string">&quot;&#x5C3E;&#x968F;&#x95ED;&#x5305;&#x5199;&#x6CD5;&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token keyword">in</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
-</ul>
-<h1 id="&#x904D;&#x5386;"><a name="&#x904D;&#x5386;" class="anchor-navigation-ex-anchor" href="#&#x904D;&#x5386;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x904D;&#x5386;</h1>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">for</span> <span class="token punctuation">(</span>key<span class="token punctuation">,</span>value<span class="token punctuation">)</span> <span class="token keyword">in</span> a <span class="token punctuation">{</span>
-    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;key: <span class="token interpolation"><span class="token delimiter variable">\(</span>key<span class="token delimiter variable">)</span></span>, value: <span class="token interpolation"><span class="token delimiter variable">\(</span>value<span class="token delimiter variable">)</span></span>&quot;</span><span class="token punctuation">)</span>
+<li><p>&#x65E0;&#x53C2;&#x6570; &#x65E0;&#x8FD4;&#x56DE;&#x503C;</p>
+<p>&#x7B80;&#x5199;&#x8FC7;&#x7A0B;</p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">play</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token builtin">Void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">param</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">play</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token builtin">Void</span> <span class="token keyword">in</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;play&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token builtin">Void</span> <span class="token keyword">in</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;play&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+play <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;play&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+play <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;play&quot;</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 </code></pre>
+</li>
+<li><p>&#x65E0;&#x53C2;&#x6570; &#x6709;&#x8FD4;&#x56DE;&#x503C;</p>
+<pre class="language-"><code class="lang-sw"><span class="token keyword">func</span> <span class="token function">play</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token function">param</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> 
+<span class="token punctuation">}</span>
+
+<span class="token function">play</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span> <span class="token keyword">in</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;play&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span> <span class="token keyword">in</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;play&quot;</span>
+<span class="token punctuation">}</span>
+
+play <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token string">&quot;play&quot;</span>
+<span class="token punctuation">}</span>
+
+play <span class="token punctuation">{</span>
+    <span class="token string">&quot;play&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -1726,14 +1744,10 @@ a<span class="token punctuation">.</span><span class="token function">updateValu
 
             
                 
-                <a href="Swift-08.html#集合比较" class="navigation navigation-prev " aria-label="Previous page: 集合比较">
+                <a href="Swift-22.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 22.可选链展开">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="Swift-09.html#基本操作" class="navigation navigation-next " aria-label="Next page: 基本操作">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1742,7 +1756,7 @@ a<span class="token punctuation">.</span><span class="token function">updateValu
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"9.Dictionary集合","level":"1.2.9","depth":2,"next":{"title":"基本操作","level":"1.2.9.1","depth":3,"anchor":"#基本操作","path":"Learn/Swift-09.md","ref":"Learn/Swift-09.md#基本操作","articles":[]},"previous":{"title":"集合比较","level":"1.2.8.2","depth":3,"anchor":"#集合比较","path":"Learn/Swift-08.md","ref":"Learn/Swift-08.md#集合比较","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism","github","anchor-navigation-ex","expandable-chapters-small","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":1},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec","ObjectiveC":"objectivec","sw":"swift"},"ignore":["sequence"]},"github":{"url":"https://github.com/NeedQuiet/Swift_Learn_Gitbook"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Daning","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daning·Swift","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/NeedQuiet","个人博客":"https://daning.netlify.app/"}},"gitbook":"*"},"file":{"path":"Learn/Swift-09.md","mtime":"2020-06-06T14:44:08.209Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-08T05:56:26.532Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"23.尾随闭包","level":"1.2.23","depth":2,"previous":{"title":"22.可选链展开","level":"1.2.22","depth":2,"path":"Learn/Swift-22.md","ref":"Learn/Swift-22.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism","github","anchor-navigation-ex","expandable-chapters-small","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"fontsettings":{"theme":"night","family":"sans","size":1},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec","ObjectiveC":"objectivec","sw":"swift"},"ignore":["sequence"]},"github":{"url":"https://github.com/NeedQuiet/Swift_Learn_Gitbook"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Daning","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daning·Swift","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/NeedQuiet","个人博客":"https://daning.netlify.app/"}},"gitbook":"*"},"file":{"path":"Learn/Swift-23.md","mtime":"2020-06-08T05:54:21.748Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-08T05:56:26.532Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
