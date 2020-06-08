@@ -16,13 +16,13 @@
   },
   "plugins": [
     "-sharing",
-    "js-sequence-diagram-full@>=0.3.1",
-    "prism",
     "-highlight",
+    "-livereload",
+    "prism",
     "github",
     "anchor-navigation-ex",
-    "expandable-chapters-small",
-    "-livereload"
+    "expandable-chapters-small"
+    
   ],
   "pluginsConfig": {
     "fontsettings": {
