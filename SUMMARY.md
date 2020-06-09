@@ -107,4 +107,5 @@
     * [闭包造成的循环引用](Learn/Swift-21.md#闭包造成的循环引用)
   * [22.可选链展开](Learn/Swift-22.md)
   * [23.尾随闭包](Learn/Swift-23.md)
+  * [24.错误捕获和处理](Learn/Swift-24.md)
 
