@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>6.String相关 · Daning·Swift</title>
+        <title>24.错误捕获和处理 · Daning·Swift</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Swift-06.html" />
     
-    
-    <link rel="prev" href="Swift-05.html" />
+    <link rel="prev" href="Swift-23.html" />
     
 
     </head>
@@ -511,7 +509,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.6" data-path="Swift-06.html">
+        <li class="chapter " data-level="1.2.6" data-path="Swift-06.html">
             
                 <a href="Swift-06.html">
             
@@ -1603,7 +1601,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.24" data-path="Swift-24.html">
+        <li class="chapter active" data-level="1.2.24" data-path="Swift-24.html">
             
                 <a href="Swift-24.html">
             
@@ -1651,7 +1649,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >6.String相关</a>
+        <a href=".." >24.错误捕获和处理</a>
     </h1>
 </div>
 
@@ -1666,139 +1664,39 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><b></b>&#x57FA;&#x672C;&#x64CD;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#&#x589E;"><b></b>&#x589E;</a></li><li><span class="title-icon "></span><a href="#&#x5220;"><b></b>&#x5220;</a></li><li><span class="title-icon "></span><a href="#&#x6539;"><b></b>&#x6539;</a></li><li><span class="title-icon "></span><a href="#&#x67E5;"><b></b>&#x67E5;</a></li><li><span class="title-icon "></span><a href="#&#x904D;&#x5386;&#x5B57;&#x7B26;&#x4E32;"><b></b>&#x904D;&#x5386;&#x5B57;&#x7B26;&#x4E32;</a></li><li><span class="title-icon "></span><a href="#&#x591A;&#x884C;&#x6587;&#x672C;"><b></b>&#x591A;&#x884C;&#x6587;&#x672C;</a></li><li><span class="title-icon "></span><a href="#&#x7279;&#x6B8A;&#x7B26;&#x53F7;"><b></b>&#x7279;&#x6B8A;&#x7B26;&#x53F7;</a></li></ul></div><a href="#&#x57FA;&#x672C;&#x64CD;&#x4F5C;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><a name="&#x57FA;&#x672C;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x57FA;&#x672C;&#x64CD;&#x4F5C;</h1>
-<ul>
-<li><p>&#x5224;&#x65AD;&#x957F;&#x5EA6;</p>
-<pre class="language-"><code class="lang-sw">str<span class="token punctuation">.</span><span class="token builtin">count</span>
-</code></pre>
-</li>
-<li><p>&#x662F;&#x5426;&#x5305;&#x542B;&#x67D0;&#x4E2A;&#x5B57;&#x7B26;</p>
-<pre class="language-"><code class="lang-sw">str<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">&quot;E&quot;</span><span class="token punctuation">)</span>
-</code></pre>
-</li>
-<li><p>&#x662F;&#x5426;&#x5DF2;xx&#x4E3A;&#x5F00;&#x5934;&#x6216;&#x7ED3;&#x5C3E;</p>
-<pre class="language-"><code class="lang-sw">str<span class="token punctuation">.</span><span class="token function">hasPrefix</span><span class="token punctuation">(</span><span class="token string">&quot;AB&quot;</span><span class="token punctuation">)</span>
-str<span class="token punctuation">.</span><span class="token function">hasSuffix</span><span class="token punctuation">(</span><span class="token string">&quot;EF&quot;</span><span class="token punctuation">)</span>
-</code></pre>
-</li>
-</ul>
-<h1 id="&#x589E;"><a name="&#x589E;" class="anchor-navigation-ex-anchor" href="#&#x589E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x589E;</h1>
-<ul>
-<li><p>&#x8FFD;&#x52A0;&#x5B57;&#x7B26;&#x4E32;</p>
-<pre class="language-"><code class="lang-sw">str<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;xx&quot;</span><span class="token punctuation">)</span>
-</code></pre>
-</li>
-<li><p>&#x63D2;&#x5165;&#x5B57;&#x7B26;&#x4E32;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&quot;ABCDEF&quot;</span>
-str<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>contentsOf<span class="token punctuation">:</span> <span class="token string">&quot;xx&quot;</span><span class="token punctuation">,</span> at<span class="token punctuation">:</span> str<span class="token punctuation">.</span><span class="token function">index</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>startIndex<span class="token punctuation">,</span> offsetBy<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token function">print</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span> 
-<span class="token comment">//&#x8F93;&#x51FA;&#xFF1A; ABxxCDEF</span>
-</code></pre>
-</li>
-</ul>
-<h1 id="&#x5220;"><a name="&#x5220;" class="anchor-navigation-ex-anchor" href="#&#x5220;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;</h1>
-<ul>
-<li><p>&#x6839;&#x636E;index&#x5220;&#x9664;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&quot;ABCDEF&quot;</span>
-str<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>at<span class="token punctuation">:</span> str<span class="token punctuation">.</span><span class="token function">index</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>startIndex<span class="token punctuation">,</span> offsetBy<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token function">print</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span>
-<span class="token comment">// &#x8F93;&#x51FA;&#xFF1A;ABDEF</span>
-</code></pre>
-</li>
-<li><p>&#x8303;&#x56F4;&#x5220;&#x9664;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&quot;ABCDEF&quot;</span>
-<span class="token keyword">var</span> a <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">index</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>startIndex<span class="token punctuation">,</span> offsetBy<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">var</span> b <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">index</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>startIndex<span class="token punctuation">,</span> offsetBy<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">)</span>
-str<span class="token punctuation">.</span><span class="token function">removeSubrange</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>b<span class="token punctuation">)</span>
-<span class="token function">print</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span>
-<span class="token comment">// &#x8F93;&#x51FA;&#xFF1A; ABF</span>
-</code></pre>
-</li>
-</ul>
-<h1 id="&#x6539;"><a name="&#x6539;" class="anchor-navigation-ex-anchor" href="#&#x6539;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6539;</h1>
-<ul>
-<li><p>&#x6839;&#x636E;&#x8303;&#x56F4;&#x66FF;&#x6362;&#x5B57;&#x7B26;&#x4E32;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&quot;ABCDEF&quot;</span>
-<span class="token keyword">var</span> a <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">index</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>startIndex<span class="token punctuation">,</span> offsetBy<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">var</span> b <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">index</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>startIndex<span class="token punctuation">,</span> offsetBy<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">)</span>
-<span class="token keyword">let</span> range <span class="token operator">=</span> a<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>b
-str<span class="token punctuation">.</span><span class="token function">replaceSubrange</span><span class="token punctuation">(</span>range<span class="token punctuation">,</span> with<span class="token punctuation">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">)</span>
-<span class="token function">print</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span>
-<span class="token comment">// &#x8F93;&#x51FA;&#xFF1A; ABxxxF</span>
-</code></pre>
-</li>
-<li><p>&#x6839;&#x636E;&#x5B57;&#x7B26;&#x4E32;&#x66FF;&#x6362;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&quot;ABCDEF&quot;</span>
-str <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">replacingOccurrences</span><span class="token punctuation">(</span>of<span class="token punctuation">:</span> <span class="token string">&quot;BC&quot;</span><span class="token punctuation">,</span> with<span class="token punctuation">:</span> <span class="token string">&quot;888&quot;</span><span class="token punctuation">)</span>
-<span class="token function">print</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span>
-<span class="token comment">// &#x8F93;&#x51FA;&#xFF1A;A888DEF</span>
-</code></pre>
-</li>
-</ul>
-<h1 id="&#x67E5;"><a name="&#x67E5;" class="anchor-navigation-ex-anchor" href="#&#x67E5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;</h1>
-<ul>
-<li><p>&#x53D6;&#x9996;&#x4F4D;:</p>
-<pre class="language-"><code class="lang-sw">str<span class="token punctuation">[</span>str<span class="token punctuation">.</span>startIndex<span class="token punctuation">]</span>
-</code></pre>
-</li>
-<li><p>&#x53D6;&#x6700;&#x540E;&#x4E00;&#x4F4D;&#xFF08;endIndex&#x53D6;&#x5F97;&#x662F;&#x6700;&#x540E;&#x4E00;&#x4F4D;&#x7684;&#x4E0B;&#x4E00;&#x4F4D;&#xFF09;:</p>
-<pre class="language-"><code class="lang-sw">str<span class="token punctuation">[</span>str<span class="token punctuation">.</span><span class="token function">index</span><span class="token punctuation">(</span>before<span class="token punctuation">:</span> str<span class="token punctuation">.</span>endIndex<span class="token punctuation">)</span><span class="token punctuation">]</span>
-</code></pre>
-</li>
-<li><p>&#x4ECE;&#x9996;&#x5C3E;&#x5F00;&#x59CB;&#xFF0C;&#x5F80;&#x540E;&#x6570;2&#x4F4D;:</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&quot;ABCDEF&quot;</span>
-<span class="token function">print</span><span class="token punctuation">(</span>str<span class="token punctuation">[</span>str<span class="token punctuation">.</span><span class="token function">index</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>startIndex<span class="token punctuation">,</span> offsetBy<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token comment">// &#x8F93;&#x51FA;&#xFF1A;C</span>
-</code></pre>
-</li>
-<li><p>&#x53D6;&#x533A;&#x95F4; index 2~4&#xFF1A;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&quot;ABCDEF&quot;</span>
-<span class="token keyword">var</span> a <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">index</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>startIndex<span class="token punctuation">,</span> offsetBy<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token keyword">var</span> b <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">index</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>startIndex<span class="token punctuation">,</span> offsetBy<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">)</span>
-<span class="token function">print</span><span class="token punctuation">(</span>str<span class="token punctuation">[</span>a<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>b<span class="token punctuation">]</span><span class="token punctuation">)</span> 
-<span class="token comment">//&#x8F93;&#x51FA;&#xFF1A;CDE</span>
-</code></pre>
-</li>
-<li><p>&#x627E;&#x5230;&#x5B57;&#x7B26;&#x5BF9;&#x5E94;&#x7684;Index&#xFF1A;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&quot;ABCDEF&quot;</span>
-<span class="token keyword">var</span> e <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">firstIndex</span><span class="token punctuation">(</span>of<span class="token punctuation">:</span> <span class="token string">&quot;E&quot;</span><span class="token punctuation">)</span> <span class="token operator">?</span><span class="token operator">?</span> <span class="token constant">nil</span>
-</code></pre>
-</li>
-<li><p>&#x622A;&#x53D6;&#x524D;4&#x4F4D;&#xFF1A;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&quot;ABCDEF&quot;</span>
-<span class="token function">print</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token keyword">prefix</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token comment">//&#x8F93;&#x51FA;&#xFF1A;ABCD</span>
-</code></pre>
-</li>
-</ul>
-<h1 id="&#x904D;&#x5386;&#x5B57;&#x7B26;&#x4E32;"><a name="&#x904D;&#x5386;&#x5B57;&#x7B26;&#x4E32;" class="anchor-navigation-ex-anchor" href="#&#x904D;&#x5386;&#x5B57;&#x7B26;&#x4E32;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x904D;&#x5386;&#x5B57;&#x7B26;&#x4E32;</h1>
-<ul>
-<li><p>&#x57FA;&#x672C;&#x904D;&#x5386;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">for</span> item <span class="token keyword">in</span> str
-<span class="token punctuation">{</span>
-  <span class="token function">print</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+                                <blockquote>
+<p>&#x5F02;&#x5E38;&#x7684;try-catch&#x673A;&#x5236;&#x6709;&#x52A9;&#x4E8E;&#x6211;&#x4EEC;&#x66F4;&#x5FEB;&#x7684;&#x5B9A;&#x4F4D;&#x51FA;&#x9519;&#x539F;&#x56E0;&#x6240;&#x5728;,&#x6B64;&#x5904;&#x7B80;&#x5355;&#x8BF4;&#x660E;&#x4E0B;try-catch&#x673A;&#x5236;&#x7684;&#x7528;&#x6CD5;.</p>
+</blockquote>
+<pre class="language-"><code class="lang-sw"><span class="token comment">// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x7684;&#x679A;&#x4E3E;&#xFF0C;&#x5E76;&#x9075;&#x5FAA;&#x9519;&#x8BEF;&#x7684;&#x534F;&#x8BAE;</span>
+<span class="token keyword">enum</span> <span class="token builtin">TestError</span><span class="token punctuation">:</span><span class="token builtin">String</span><span class="token punctuation">,</span><span class="token builtin">Error</span><span class="token punctuation">{</span>
+    <span class="token keyword">case</span> error1 <span class="token operator">=</span> <span class="token string">&quot;&#x9519;&#x8BEF;1&quot;</span>
+    <span class="token keyword">case</span> error2 <span class="token operator">=</span> <span class="token string">&quot;&#x9519;&#x8BEF;2&quot;</span>
 <span class="token punctuation">}</span>
-</code></pre>
-</li>
-<li><p>&#x6839;&#x636E;index&#x904D;&#x5386;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">for</span> index <span class="token keyword">in</span> <span class="token number">0</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">&lt;</span>str<span class="token punctuation">.</span><span class="token builtin">count</span><span class="token operator">-</span><span class="token number">1</span>
-<span class="token punctuation">{</span>
-  <span class="token function">print</span><span class="token punctuation">(</span>str<span class="token punctuation">[</span>str<span class="token punctuation">.</span><span class="token function">index</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span>startIndex<span class="token punctuation">,</span> offsetBy<span class="token punctuation">:</span> index<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment">// &#x7528;throw&#x8FDB;&#x884C;&#x629B;&#x51FA;&#x5F02;&#x5E38;</span>
+<span class="token keyword">func</span> <span class="token function">play</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span><span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">String</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> param <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token builtin">TestError</span><span class="token punctuation">.</span>error1
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> param <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> param <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token builtin">TestError</span><span class="token punctuation">.</span>error2
+    <span class="token punctuation">}</span>
+
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6B63;&#x5E38;&#x6267;&#x884C;&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token string">&quot;hello world&quot;</span>
 <span class="token punctuation">}</span>
-</code></pre>
-</li>
-</ul>
-<h1 id="&#x591A;&#x884C;&#x6587;&#x672C;"><a name="&#x591A;&#x884C;&#x6587;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x884C;&#x6587;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x884C;&#x6587;&#x672C;</h1>
-<p>&#x6587;&#x5B57;&#x4F1A;&#x6309;&#x7167;3&#x5F15;&#x53F7;&#x5185;&#x683C;&#x5F0F;&#x8F93;&#x51FA;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>&quot;
-        asdad
-asdasd
-            asdasd
-<span class="token string">&quot;&quot;</span>&quot;
-</code></pre>
-<h1 id="&#x7279;&#x6B8A;&#x7B26;&#x53F7;"><a name="&#x7279;&#x6B8A;&#x7B26;&#x53F7;" class="anchor-navigation-ex-anchor" href="#&#x7279;&#x6B8A;&#x7B26;&#x53F7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7279;&#x6B8A;&#x7B26;&#x53F7;</h1>
-<p>&#x7528;#&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5305;&#x8D77;&#x6765;</p>
-<pre class="language-"><code class="lang-sw"><span class="token keyword">let</span> b <span class="token operator">=</span> #<span class="token string">&quot;&quot;</span>asda<span class="token operator">!</span>@<span class="token punctuation">(</span><span class="token operator">*</span><span class="token operator">&amp;</span>#<span class="token punctuation">(</span><span class="token operator">*</span><span class="token operator">!</span><span class="token operator">&amp;</span>@#sd<span class="token string">&quot;&quot;</span>#
+
+<span class="token comment">// &#x6355;&#x83B7;&#x5F02;&#x5E38;</span>
+<span class="token keyword">do</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> value <span class="token operator">=</span>  <span class="token keyword">try</span> <span class="token function">play</span><span class="token punctuation">(</span>param<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">)</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token builtin">TestError</span><span class="token punctuation">.</span>error1 <span class="token punctuation">{</span> <span class="token comment">// &#x6355;&#x83B7;&#x9519;&#x8BEF;</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token builtin">TestError</span><span class="token punctuation">.</span>error1<span class="token punctuation">.</span>rawValue<span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token builtin">TestError</span><span class="token punctuation">.</span>error2 <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token builtin">TestError</span><span class="token punctuation">.</span>error2<span class="token punctuation">.</span>rawValue<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">defer</span> <span class="token punctuation">{</span> <span class="token comment">// &#x6700;&#x540E;&#x7684;&#x6536;&#x5C3E;&#x5DE5;&#x4F5C;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x5426;error&#x90FD;&#x4F1A;&#x6267;&#x884C;</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;defer&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
 </code></pre>
 
                                 
@@ -1827,14 +1725,10 @@ asdasd
 
             
                 
-                <a href="Swift-05.html#while-循环" class="navigation navigation-prev " aria-label="Previous page: while 循环">
+                <a href="Swift-23.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 23.尾随闭包">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="Swift-06.html#基本操作" class="navigation navigation-next " aria-label="Next page: 基本操作">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1843,7 +1737,7 @@ asdasd
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"6.String相关","level":"1.2.6","depth":2,"next":{"title":"基本操作","level":"1.2.6.1","depth":3,"anchor":"#基本操作","path":"Learn/Swift-06.md","ref":"Learn/Swift-06.md#基本操作","articles":[]},"previous":{"title":"while 循环","level":"1.2.5.3","depth":3,"anchor":"#while-循环","path":"Learn/Swift-05.md","ref":"Learn/Swift-05.md#while-循环","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism","github","anchor-navigation-ex","expandable-chapters-small","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec","ObjectiveC":"objectivec","sw":"swift"},"ignore":["sequence"]},"github":{"url":"https://github.com/NeedQuiet/Swift_Learn_Gitbook"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Daning","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daning·Swift","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/NeedQuiet","个人博客":"https://daning.netlify.app/"}},"gitbook":"*"},"file":{"path":"Learn/Swift-06.md","mtime":"2020-06-08T07:27:02.641Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-09T11:17:01.677Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"24.错误捕获和处理","level":"1.2.24","depth":2,"previous":{"title":"23.尾随闭包","level":"1.2.23","depth":2,"path":"Learn/Swift-23.md","ref":"Learn/Swift-23.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism","github","anchor-navigation-ex","expandable-chapters-small","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec","ObjectiveC":"objectivec","sw":"swift"},"ignore":["sequence"]},"github":{"url":"https://github.com/NeedQuiet/Swift_Learn_Gitbook"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":true,"showGoTop":true,"showLevel":false},"expandable-chapters-small":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Daning","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daning·Swift","language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/NeedQuiet","个人博客":"https://daning.netlify.app/"}},"gitbook":"*"},"file":{"path":"Learn/Swift-24.md","mtime":"2020-06-09T11:16:17.839Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-09T11:17:01.677Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
