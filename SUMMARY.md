@@ -83,7 +83,7 @@
     * [类的定义](Learn/Swift-16.md#类的定义)
     * [类的传值](Learn/Swift-16.md#类的传值)
     * [类的继承](Learn/Swift-16.md#类的继承)
-    * [(向上/下、可选)类型转换](Learn/Swift-16.md#向上下、可选类型转换)
+    * [类型转换(向上/下、可选)](Learn/Swift-16.md#类型转换向上下、可选)
     * [类的相等判断](Learn/Swift-16.md#类的相等判断)
   * [17.关键字](Learn/Swift-17.md)
     * [访问权限关键字](Learn/Swift-17.md#访问权限关键字)
@@ -108,4 +108,7 @@
   * [22.可选链展开](Learn/Swift-22.md)
   * [23.尾随闭包](Learn/Swift-23.md)
   * [24.错误捕获和处理](Learn/Swift-24.md)
+  * [25.类型限定](Learn/Swift-25.md)
+    * [泛型类型限定](Learn/Swift-25.md#泛型类型限定)
+    * [协议限定(associatedtype)](Learn/Swift-25.md#协议限定associatedtype)
 
