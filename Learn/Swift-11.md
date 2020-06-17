@@ -3,7 +3,7 @@
 # 基本用法
 
 ```sw
-//可以理解为不满局，就拦截
+//可以理解为不满足，就拦截
 func test(param:Int){
     guard param < 10 else {
         print("进入guard语句里")

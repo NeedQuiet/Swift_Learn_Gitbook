@@ -111,4 +111,6 @@
   * [25.类型限定](Learn/Swift-25.md)
     * [泛型类型限定](Learn/Swift-25.md#泛型类型限定)
     * [协议限定(associatedtype)](Learn/Swift-25.md#协议限定associatedtype)
-
+* [Swift常用三方库](Third/README.md)
+    * [Alamofire](Third/README.md#alamofire)
+    * [Kingfisher](Third/README.md#kingfisher)
